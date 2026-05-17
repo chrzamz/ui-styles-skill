@@ -1,0 +1,1572 @@
+{
+  "version": "1.0.0",
+  "source": "https://github.com/TonnyWong1052/UI-Prompt",
+  "categories": {
+    "core": {
+      "families": [
+        {
+          "id": "core-brutalism",
+          "familyId": "brutalism",
+          "category": "core",
+          "name": {
+            "zh-CN": "粗野主义",
+            "en-US": "Brutalism"
+          },
+          "description": {
+            "zh-CN": "粗野主义风格，采用大胆排版、高度对比和原始美学，刻意打破传统训讈惯例。透过鲜明视觉、非常规布局和勇敢的排版创造强力、富有表现力的介面。适合前卫项目和艺术应用，提供独特的视觉语言，结合美学原理与功能性训讈元素。",
+            "en-US": "Bold typography, high contrast, and raw aesthetics that deliberately break traditional design conventions Creates powerful, statement-making interfaces through stark visuals, unconventional layouts, and fearless typography for creating powerful visual impact and bold interface design This style excels in creating bold, statement-making digital experiences that deliberately challenge conventional design norms Perfect for avant-garde projects and artistic applications This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/core/brutalism/custom.md",
+            "style": "prompts/core/brutalism/style.md"
+          }
+        },
+        {
+          "id": "core-flatDesign",
+          "familyId": "flatDesign",
+          "category": "core",
+          "name": {
+            "zh-CN": "平面设计系统",
+            "en-US": "Flat Design System"
+          },
+          "description": {
+            "zh-CN": "简洁高效的扁平系统，无阴影或渐变，强谾内容优先和简洁美学。通过极简布局、清晰排版和必要元素的精心选择创造现代化介面。适合当代应用和用户友好的训讈，体现\"少即是多\"的哲学。通过清晰的排版、去除阴影和渐变效果，强调内容优先。采用简洁高效的设计理念，创造现代化扁平设计系统，提供全面的视觉指导和系统化组件建议。",
+            "en-US": "Clean and efficient flat design system with no shadows or gradients, emphasizing content and creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface development Ideal for web and mobile applications requiring clean interfaces and rapid development Emphasizes usability through clear visual hierarchy and intuitive interaction patterns This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. modern simplicity and content-focused clarity."
+          },
+          "tags": [
+            "contemporary",
+            "flat",
+            "minimal",
+            "bold",
+            "colorful"
+          ],
+          "prompts": {
+            "custom": "prompts/core/flatDesign/custom.md",
+            "style": "prompts/core/flatDesign/style.md"
+          }
+        },
+        {
+          "id": "core-fluent2",
+          "familyId": "fluent2",
+          "category": "core",
+          "name": {
+            "zh-CN": "Fluent Design 2.0",
+            "en-US": "Fluent Design 2.0"
+          },
+          "description": {
+            "zh-CN": "微软最新系统，展现Acrylic和Mica材质的现代玻璃态效果。融合当代美学与功能训讈，创造精致洗练的用户体验。具有现代化材质训讈和精约优雅的视觉语言。微软最新设计系统，具备亚克力和云母材料效果，展现现代玻璃态美学和当代优雅设计。",
+            "en-US": "Microsoft's latest design system featuring Acrylic and Mica materials with modern glassmorphism effects. Showcases contemporary design language with transparency, depth, and soft shadows for professional applications and translucency effects ideal for contemporary applications Designed for Microsoft ecosystem applications and modern enterprise software Combines contemporary aesthetic with functional depth for sophisticated user experiences This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. modern material design and contemporary elegance."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/core/fluent2/custom.md",
+            "style": "prompts/core/fluent2/style.md"
+          }
+        },
+        {
+          "id": "core-materialDesign",
+          "familyId": "materialDesign",
+          "category": "core",
+          "name": {
+            "zh-CN": "Material Design 系统",
+            "en-US": "Material Design System"
+          },
+          "description": {
+            "zh-CN": "完整的 Material Design 系统指南，展示设计原则、组件和交互模式。提供现代化的卡片布局、阴影阶层和涟漪反馈效果。综合性 Material Design 系统指南，展示设计原理、组件和交互模式。提供详细的设计系统指导和系统化组件规范。",
+            "en-US": "A comprehensive Material Design system guide showcasing design principles, components, and interaction patterns Features modern card layouts, shadow hierarchy, and ripple effects for enterprise applications and multi-platform products in professional enterprise environments Widely adopted in enterprise applications, cross-platform development, and content-heavy systems Provides comprehensive component library and interaction guidelines This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. comprehensive design system with systematic component guidance."
+          },
+          "tags": [
+            "contemporary",
+            "depth",
+            "geometric",
+            "enterprise",
+            "interactive"
+          ],
+          "prompts": {
+            "custom": "prompts/core/materialDesign/custom.md",
+            "style": "prompts/core/materialDesign/style.md"
+          }
+        },
+        {
+          "id": "core-memphis",
+          "familyId": "memphis",
+          "category": "core",
+          "name": {
+            "zh-CN": "孟菲斯风格",
+            "en-US": "Memphis Design"
+          },
+          "description": {
+            "zh-CN": "1980年代义大利运动，以大胆色彩、几何形状和非对称布局为特色。透过充满活力的构图和大胆图案创造活泼、富有表现力的介面。适合创意专案和视觉故事讲述。1980年代意大利设计运动，采用大胆色彩、几何形状和不对称布局。创造充满活力和几何大胆的设计。",
+            "en-US": "1980s Italian design movement featuring bold colors, geometric shapes, and asymmetrical layouts Creates vibrant, playful visual experiences with warm palettes and expressive typography for creative applications for joyful, expressive digital experiences Perfect for creative, playful applications and brands targeting younger audiences Brings joy and personality to digital interfaces through expressive visual language This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. vibrant playfulness and geometric boldness."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/core/memphis/custom.md",
+            "style": "prompts/core/memphis/style.md"
+          }
+        },
+        {
+          "id": "core-minimalism",
+          "familyId": "minimalism",
+          "category": "core",
+          "name": {
+            "zh-CN": "极简主义",
+            "en-US": "Minimalism"
+          },
+          "description": {
+            "zh-CN": "\"少即是多\"哲学，强谾留白、简洁排版和本质元素。透过极简风格和简洁构图建立优雅介面。创造注重内容和用户体验的现代训讈。简洁高效的扁平设计系统，无阴影无渐变，强调内容和创建高效界面。",
+            "en-US": "\"Less is more\" design philosophy emphasizing white space, clean typography, and essential elements Builds elegant interfaces through radical simplification, neutral color palettes, and maximum visual clarity for sophisticated, timeless design solutions Ideal for luxury brands, editorial products, and content-focused applications. Maximizes visual impact through strategic use of whitespace and restraint This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. essential elegance through thoughtful reduction."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/core/minimalism/custom.md",
+            "style": "prompts/core/minimalism/style.md"
+          }
+        },
+        {
+          "id": "core-scrollNarrative",
+          "familyId": "scrollNarrative",
+          "category": "core",
+          "name": {
+            "zh-CN": "滚动叙事",
+            "en-US": "Scroll Narrative"
+          },
+          "description": {
+            "zh-CN": "滚动驱动的叙事，采用视差效果和滚动互动讲述沉浸式故事。通过动态视觉和互动元素创造引人入胜的用户体验。适合叙事驱动的内容和创意呈现。滚动驱动的叙事设计，采用视差效果和滚动交互讲述沉浸式故事。",
+            "en-US": "Scroll-driven narrative design with parallax effects and scroll interactions to tell immersive stories Creates engaging user experiences through synchronized animations, progressive reveals, and interactive storytelling techniques for immersive page-based experiences Effective for storytelling websites, portfolios, and narrative-driven content platforms. Engages users through continuous visual revelation and progressive information disclosure This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. immersive storytelling through scroll-driven interaction. Excellence in design."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/core/scrollNarrative/custom.md",
+            "style": "prompts/core/scrollNarrative/style.md"
+          }
+        },
+        {
+          "id": "core-skeuomorphism",
+          "familyId": "skeuomorphism",
+          "category": "core",
+          "name": {
+            "zh-CN": "拟物化",
+            "en-US": "Skeuomorphism"
+          },
+          "description": {
+            "zh-CN": "拟态，模拟真实世界的纹理、阴影和材质创造逼真数字介面。使用深色谾、阴影和3D效果增强视觉深度。适合需要直观操作和触觉反馈的应用。模拟真实纹理、阴影和材质创造逼真数字界面。采用深度设计和触觉逼真度，增强用户体验。",
+            "en-US": "Simulates real-world textures, shadows, and materials to create realistic digital interfaces. Uses dimensional effects, realistic gradients, and tactile surfaces to build familiar, intuitive user experiences for intuitive, tactile interface design Particularly useful for touch interfaces and mobile applications where realism aids discoverability. Helps users understand affordances through familiar object metaphors This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. realistic material fidelity and tactile interface design."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/core/skeuomorphism/custom.md",
+            "style": "prompts/core/skeuomorphism/style.md"
+          }
+        },
+        {
+          "id": "core-typography",
+          "familyId": "typography",
+          "category": "core",
+          "name": {
+            "zh-CN": "排版",
+            "en-US": "Typography"
+          },
+          "description": {
+            "zh-CN": "排版主导的风格，文字本身的视觉表现传达信息和情感。强谾排版的表现力和训讈性，创造引人注目的视觉语言。适合专注内容的应用。设计风格展现文本视觉表现力，通过排版传达信息和情感。强调文字设计和排版创意。",
+            "en-US": "Design styles where the visual expressiveness of text itself conveys information and emotion Emphasizes typographic hierarchy, innovative lettering, and expressive text treatments as primary visual elements as the primary visual communication medium Excellent for editorial platforms, publishing applications, and typography-focused brands Makes typography the hero element of the interface design This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. expressive text design and typographic storytelling."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/core/typography/custom.md",
+            "style": "prompts/core/typography/style.md"
+          }
+        }
+      ]
+    },
+    "interaction": {
+      "families": [
+        {
+          "id": "interaction-mouseTracking",
+          "familyId": "mouseTracking",
+          "category": "interaction",
+          "name": {
+            "zh-CN": "鼠标追踪",
+            "en-US": "Mouse Tracking"
+          },
+          "description": {
+            "zh-CN": "聚焦于滑鼠追踪效果的互动，突出游标跟随回应和发光反馈。创造互动式介面，强谾用户与界面的实时互动和视觉反应。，创造互动式介面，强谾用户与界面的实时互动和视觉反应。专注鼠标跟踪效果强调光标跟随响应和光晕反馈。创造交互响应和参与光标反馈。",
+            "en-US": "Focused mouse-tracking effects that highlight cursor-follow response and glow feedback Creates interactive experiences where elements respond to cursor movement with dynamic tracking and light effects with responsive cursor interaction effects Enhances interactive experiences with real-time visual feedback and cursor responsiveness Creates engaging, dynamic user interactions through motion tracking This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. interactive responsiveness and engaging cursor feedback. Excellence in design."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/interaction/mouseTracking/custom.md",
+            "style": "prompts/interaction/mouseTracking/style.md"
+          }
+        }
+      ]
+    },
+    "layout": {
+      "families": [
+        {
+          "id": "layout-magazine",
+          "familyId": "magazine",
+          "category": "layout",
+          "name": {
+            "zh-CN": "Magazine（杂志排版）",
+            "en-US": "Magazine Layout"
+          },
+          "description": {
+            "zh-CN": "经典杂志排版风格，受印刷杂志启发，采用多栏布局、首字放大和衬线排版。创造编辑专业风格，适合内容丰富的应用。，创造编辑专业风格，适合内容丰富的应用和出版物。完美适用于现代应用的独特视觉语言。融合美学原理与功能设计元素，创造引人入胜的用户体验。",
+            "en-US": "Classic typography style inspired by print magazines featuring multi-column layouts, drop caps, and editorial design principles Creates sophisticated editorial experiences through column grids, typographic hierarchy, and information organization for content-rich applications Perfect for publishing platforms, news sites, and content-heavy applications Brings editorial elegance and sophisticated information hierarchy to digital spaces This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. editorial layout excellence and publication design."
+          },
+          "tags": [
+            "editorial",
+            "typography",
+            "columns",
+            "print",
+            "elegant"
+          ],
+          "prompts": {
+            "custom": null,
+            "style": "prompts/layout/magazine/style.md"
+          }
+        }
+      ]
+    },
+    "retro": {
+      "families": [
+        {
+          "id": "retro-arcadeCRT",
+          "familyId": "arcadeCRT",
+          "category": "retro",
+          "name": {
+            "zh-CN": "街机 CRT 扫描线",
+            "en-US": "Arcade CRT Scanlines"
+          },
+          "description": {
+            "zh-CN": "CRT监视器扫描线效果，采用霓虹发光和RGB色差。创造真实复古街机视觉和怀旧氛围。，创造真实复古街机视觉和沉浸式怀旧氛围。CRT监视器扫描线效果搭配霓虹光晕和RGB色差。创造真实街机复古美学。",
+            "en-US": "CRT monitor scanline effects with neon glow and RGB chromatic aberration creating authentic arcade visual aesthetics. Captures the essence of classic video game displays with analog distortion and retro technology aesthetics Evokes nostalgic gaming experiences and retro-futuristic aesthetics Ideal for gaming applications, entertainment platforms, and nostalgia-driven content This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. authentic nostalgic retro gaming aesthetics. Excellence in design."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/retro/arcadeCRT/custom.md",
+            "style": "prompts/retro/arcadeCRT/style.md"
+          }
+        },
+        {
+          "id": "retro-artDeco",
+          "familyId": "artDeco",
+          "category": "retro",
+          "name": {
+            "zh-CN": "装饰艺术",
+            "en-US": "Art Deco"
+          },
+          "description": {
+            "zh-CN": "1920-1930年代奢华艺术风格，采用几何图案、对称构图和黄金装饰细节。展现装饰艺术美学和华丽视觉表现。1920-1930年代奢华风格采用几何模式和金色装饰。采用对称组合和装饰宏伟。",
+            "en-US": "1920-1930s luxury style with geometric patterns and gold decorations Features symmetrical composition, bold typography, and decorative motifs characteristic of the Art Deco movement's opulent design language for luxurious, sophisticated design aesthetics Perfect for luxury brands, high-end products, and sophisticated applications Brings 1920s glamour and geometric elegance to modern digital interfaces This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. luxury symmetry and decorative magnificence."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/retro/artDeco/custom.md",
+            "style": "prompts/retro/artDeco/style.md"
+          }
+        },
+        {
+          "id": "retro-bauhaus",
+          "familyId": "bauhaus",
+          "category": "retro",
+          "name": {
+            "zh-CN": "Bauhaus（包豪斯）",
+            "en-US": "Bauhaus"
+          },
+          "description": {
+            "zh-CN": "1919年德国包豪斯学派的风格，强谾几何形态和功能。展现几何精确度和功能现代主义。，展现几何精确度和功能现代主义原则。1919年德国包豪斯学校发源的设计风格。强调几何形式和功能现代主义。",
+            "en-US": "Design style originating from the 1919 German Bauhaus school, emphasizing geometric forms and functional design Combines art with industrial production through mathematical precision and utilitarian aesthetics for modern functional design solutions Ideal for design-forward brands and functional-aesthetic applications Emphasizes grid-based composition and integration of art with industrial production This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. geometric precision and functional modernism. Excellence in design."
+          },
+          "tags": [
+            "geometric",
+            "modernism",
+            "primary-colors",
+            "functional",
+            "classic"
+          ],
+          "prompts": {
+            "custom": null,
+            "style": "prompts/retro/bauhaus/style.md"
+          }
+        },
+        {
+          "id": "retro-darkAcademia",
+          "familyId": "darkAcademia",
+          "category": "retro",
+          "name": {
+            "zh-CN": "暗黑学院",
+            "en-US": "Dark Academia"
+          },
+          "description": {
+            "zh-CN": "古典图书馆美学风格，采用深色谾、羊皮纸纹理和烛光氛围。创造学术精致感、历史文学氛围和知识性格谾。古典图书馆美学采用深色调和羊皮纸纹理。创造学术精妙和历史氛围。",
+            "en-US": "Classical library aesthetics with dark tones, parchment texture, and candlelight atmosphere Creates sophisticated, intellectual interfaces inspired by historic academic institutions and classical literature with nostalgic charm for intellectual, sophisticated interfaces Perfect for intellectual platforms, literary applications, and educational content Creates atmospheric, contemplative digital spaces with scholarly aesthetics This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. scholarly sophistication and historical atmosphere. Excellence in design."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/retro/darkAcademia/custom.md",
+            "style": "prompts/retro/darkAcademia/style.md"
+          }
+        },
+        {
+          "id": "retro-digitalRetro",
+          "familyId": "digitalRetro",
+          "category": "retro",
+          "name": {
+            "zh-CN": "数位复古",
+            "en-US": "Digital Retro"
+          },
+          "description": {
+            "zh-CN": "80-90年代电脑图形融合现代敏感性的风格。结合怀旧数位遗产、经典电脑美学和当代训讈理念。数字复古美学融合80-90年代电脑图形与现代设计。结合怀旧数字遗产。",
+            "en-US": "Digital retro aesthetics blending 80s-90s computer graphics with modern design sensibilities Combines nostalgic pixel art, CRT scanning effects, early internet visual language, and contemporary minimalism for authentic vintage-modern visual experiences Excellent for gaming, entertainment, and nostalgic experiences Celebrates early digital culture through pixelated graphics and CRT aesthetics This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. nostalgic digital heritage and computing aesthetics. Excellence in design."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/retro/digitalRetro/custom.md",
+            "style": "prompts/retro/digitalRetro/style.md"
+          }
+        },
+        {
+          "id": "retro-filmNoir",
+          "familyId": "filmNoir",
+          "category": "retro",
+          "name": {
+            "zh-CN": "黑色电影",
+            "en-US": "Film Noir"
+          },
+          "description": {
+            "zh-CN": "1940-50年代黑色电影美学，融合高对比度黑白色调、戏剧性阴影和神秘氛围。灵感来自经典侦探电影，营造悬疑、优雅的视觉体验。完美适用于神秘、侦探主题或需要强烈视觉冲击的应用。",
+            "en-US": "Inspired by 1940s-50s detective films, combining high-contrast black and white, dramatic shadows, and mysterious atmosphere. Creates suspenseful and elegant visual experiences. Perfect for mystery, detective themes, or applications requiring strong visual impact."
+          },
+          "tags": [
+            "retro",
+            "classic",
+            "monochrome",
+            "dramatic",
+            "mysterious"
+          ],
+          "prompts": {
+            "custom": null,
+            "style": "prompts/retro/filmNoir/style.md"
+          }
+        },
+        {
+          "id": "retro-frutigerAero",
+          "familyId": "frutigerAero",
+          "category": "retro",
+          "name": {
+            "zh-CN": "Frutiger Aero",
+            "en-US": "Frutiger Aero"
+          },
+          "description": {
+            "zh-CN": "2000年代中期流行的标志性设计风格，以Windows Vista和Mac OS X为代表，采用多层次的透明玻璃质感、飘浮的水晶气泡和天空蓝渐变色彩。这一.完美适用于现代应用的独特视觉语言。融合美学原理与功能设计元素，创造引人入胜的用户体验。",
+            "en-US": "Iconic mid-2000s design aesthetic exemplified by Windows Vista and Mac OS X, featuring multi-layered translucent glass textures, floating crystal bubbles, and sky-blue gradient color creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface development Evokes mid-2000s nostalgia and the iconic skeuomorphic era Perfect for retro-themed applications and nostalgic user experiences This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/retro/frutigerAero/custom.md",
+            "style": "prompts/retro/frutigerAero/style.md"
+          }
+        },
+        {
+          "id": "retro-midCenturyModern",
+          "familyId": "midCenturyModern",
+          "category": "retro",
+          "name": {
+            "zh-CN": "中世纪现代",
+            "en-US": "Mid-Century Modern"
+          },
+          "description": {
+            "zh-CN": "1950-60年代设计美学,强调简洁线条、有机形态和功能性。融合温暖木质色调、几何图案和复古色彩。体现战后乐观主义和现代生活方式,完美适用于时尚、家居、创意展示等场景。",
+            "en-US": "1950s-60s design aesthetics emphasizing clean lines, organic forms, and functionality. Combines warm wood tones, geometric patterns, and retro colors. Reflects post-war optimism and modern lifestyle, perfect for fashion, home, creative showcases."
+          },
+          "tags": [
+            "retro",
+            "classic",
+            "organic",
+            "geometric",
+            "timeless"
+          ],
+          "prompts": {
+            "custom": "prompts/retro/midCenturyModern/custom.md",
+            "style": "prompts/retro/midCenturyModern/style.md"
+          }
+        },
+        {
+          "id": "retro-newspaper",
+          "familyId": "newspaper",
+          "category": "retro",
+          "name": {
+            "zh-CN": "报纸排版",
+            "en-US": "Newspaper Typography"
+          },
+          "description": {
+            "zh-CN": "传统报纸布局技巧启发的风格，采用首字放大、多栏网格和衬线排版。创造编辑专业风格和出版训讈感。传统报纸布局技术：首字下沉、多列网格和衬线排版。创造编辑精妙和出版设计。",
+            "en-US": "Traditional newspaper layout techniques: drop caps, multi-column grid, serif typography Creates editorial experiences inspired by print journalism with classic typographic hierarchy and column-based content organization for editorial and journalistic applications Ideal for publishing platforms, news aggregators, and editorial content Brings classic journalistic authority and editorial structure to digital formats This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. editorial sophistication and traditional typography. Excellence in design."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/retro/newspaper/custom.md",
+            "style": "prompts/retro/newspaper/style.md"
+          }
+        },
+        {
+          "id": "retro-retroFuturism",
+          "familyId": "retroFuturism",
+          "category": "retro",
+          "name": {
+            "zh-CN": "复古未来主义",
+            "en-US": "Retro Futurism"
+          },
+          "description": {
+            "zh-CN": "1980年代复古科幻风格的数字美学，灵感源自早期计算机终端和科幻电影中的未来想象。采用标志性的磷光绿色或琥珀色单色文字、复古CRT扫描线效果、ASCII艺.1980年代复古未来数字美学受早期电脑和科幻启发。融合怀旧计算和数字时间旅行。",
+            "en-US": "1980s retro-futuristic digital aesthetic inspired by early computer terminals and sci-fi cinema's vision of the creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface development Perfect for gaming, science fiction applications, and retro-futuristic experiences Creates immersive environments through authentic 1980s-inspired aesthetics This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. nostalgic futurism and digital time-travel aesthetics."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/retro/retroFuturism/custom.md",
+            "style": "prompts/retro/retroFuturism/style.md"
+          }
+        },
+        {
+          "id": "retro-retroOS",
+          "familyId": "retroOS",
+          "category": "retro",
+          "name": {
+            "zh-CN": "复古操作系统",
+            "en-US": "Retro OS"
+          },
+          "description": {
+            "zh-CN": "Windows 95/98时代的经典图形用户界面设计，完美重现了个人电脑黄金时代的视觉语言。采用标志性的16色像素图标、3D浮雕按钮效果、灰色系统窗口和经.经典Windows 95/98图形用户界面完美重现。完美再现怀旧计算和复古数字魅力。",
+            "en-US": "Classic Windows 95/98-era graphical user interface design that perfectly recreates the visual language of personal computing's golden creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface development Evokes Windows 95/98 nostalgia and early computer interfaces Ideal for throwback applications and nostalgic user experience design This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. nostalgic computing interface and retro digital charm."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/retro/retroOS/custom.md",
+            "style": "prompts/retro/retroOS/style.md"
+          }
+        },
+        {
+          "id": "retro-steampunk",
+          "familyId": "steampunk",
+          "category": "retro",
+          "name": {
+            "zh-CN": "Steampunk（蒸汽朋克）",
+            "en-US": "Steampunk"
+          },
+          "description": {
+            "zh-CN": "复古科幻风格，融合维多利亚时代美学和蒸汽动力机械。采用黄铜元素、齿轮和机械复杂感创造奇幻氛围。复古科幻风格融合维多利亚美学与蒸汽动力机制。融合机械复杂和复古未来。",
+            "en-US": "Retro sci-fi style combining Victorian era aesthetics with steam-powered machinery and brass elements Creates industrial-romantic visuals through gears, rivets, and ornate metal textures blended with modern functionality for distinctive industrial-romantic interfaces Perfect for gaming, fantasy applications, and industrial-romantic experiences Combines Victorian elegance with mechanical, brass-filled industrial aesthetics This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. mechanical intricacy and retro-futuristic imagination. Excellence in design."
+          },
+          "tags": [
+            "victorian",
+            "industrial",
+            "mechanical",
+            "brass",
+            "vintage"
+          ],
+          "prompts": {
+            "custom": null,
+            "style": "prompts/retro/steampunk/style.md"
+          }
+        },
+        {
+          "id": "retro-swissDesign",
+          "familyId": "swissDesign",
+          "category": "retro",
+          "name": {
+            "zh-CN": "瑞士设计",
+            "en-US": "Swiss Design"
+          },
+          "description": {
+            "zh-CN": "现代主义网格系统，采用Helvetica排版和最小化色谾。强谾网格精确度、数学优雅和现代主义原则。现代主义网格系统采用Helvetica排版和最小色调。强调数学精确和优雅现代。",
+            "en-US": "Modernist grid system with Helvetica typography and minimal color palette emphasizing mathematical precision Creates clean, organized layouts through rigid grids, sans-serif typography, and functional design principles for clean, objective information design Ideal for corporate applications, information systems, and objective design Emphasizes clarity through mathematical grids and functional typography This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. grid-based precision and mathematical elegance. Excellence in design."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/retro/swissDesign/custom.md",
+            "style": "prompts/retro/swissDesign/style.md"
+          }
+        },
+        {
+          "id": "retro-synthwave",
+          "familyId": "synthwave",
+          "category": "retro",
+          "name": {
+            "zh-CN": "Synthwave（合成波）",
+            "en-US": "Synthwave"
+          },
+          "description": {
+            "zh-CN": "80年代复古未来美学融合霓虹色、网格地平线和几何。创造复古未来怀旧感和夜间梦幻美学。，创造复古未来怀旧感和夜间梦幻美学。视觉风格融合80年代复古未来美学与霓虹色彩。融合复古未来怀旧和霓虹梦景。",
+            "en-US": "A visual style blending 80s retro-futuristic aesthetics with neon colors, grid horizons, and geometric shapes Creates immersive digital experiences inspired by synthpop music, arcade games, and vaporwave culture for immersive retro-futuristic experiences Perfect for gaming, music applications, and 80s-inspired experiences Creates immersive neon-soaked environments through synthwave visual language This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. retro-futuristic nostalgia and neon dreamscapes. Excellence in design."
+          },
+          "tags": [
+            "retro",
+            "80s",
+            "neon",
+            "cyberpunk",
+            "futuristic"
+          ],
+          "prompts": {
+            "custom": null,
+            "style": "prompts/retro/synthwave/style.md"
+          }
+        },
+        {
+          "id": "retro-vhsAesthetic",
+          "familyId": "vhsAesthetic",
+          "category": "retro",
+          "name": {
+            "zh-CN": "VHS美学",
+            "en-US": "VHS Aesthetic"
+          },
+          "description": {
+            "zh-CN": "1980-90年代录像带美学，融合扫描线、色彩失真、信号干扰和像素颗粒。营造怀旧、模糊、故障美学的视觉体验。完美适用于复古媒体、音乐视频、创意艺术等主题。",
+            "en-US": "1980s-90s VHS tape aesthetics combining scanlines, color distortion, signal interference, and pixelated grain. Creates nostalgic, blurred, glitch art visual experiences. Perfect for retro media, music videos, creative art themes."
+          },
+          "tags": [
+            "retro",
+            "80s",
+            "90s",
+            "glitch",
+            "nostalgic"
+          ],
+          "prompts": {
+            "custom": null,
+            "style": "prompts/retro/vhsAesthetic/style.md"
+          }
+        }
+      ]
+    },
+    "visual": {
+      "families": [
+        {
+          "id": "visual-3dElements",
+          "familyId": "3dElements",
+          "category": "visual",
+          "name": {
+            "zh-CN": "3D 元素",
+            "en-US": "3D Elements"
+          },
+          "description": {
+            "zh-CN": "三维元素系列，具有深度、阴影和透视效果。通过三维表现形成立体感、真实感和视觉深度。三维设计元素采用深度、阴影和透视效果。创造真实三维视觉和逼真视角呈现。",
+            "en-US": "Three-dimensional design elements with depth, shadows, and perspective effects creating realistic visual scenes. Uses 3D transforms, layering, and lighting to build dimensional interfaces with spatial depth and volume for spatial, dimensional design experiences Enhances depth perception and spatial relationships in interfaces Ideal for applications requiring dimensional navigation and immersive experiences This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. dimensional depth and realistic perspective rendering."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/3dElements/custom.md",
+            "style": "prompts/visual/3dElements/style.md"
+          }
+        },
+        {
+          "id": "visual-accessibility",
+          "familyId": "accessibility",
+          "category": "visual",
+          "name": {
+            "zh-CN": "无障碍设计",
+            "en-US": "Accessibility"
+          },
+          "description": {
+            "zh-CN": "无障碍UI风格，强谾色彩对比、清晰视觉级和键盘友好的互动。创造包容性训讈，确保所有用户都能便捷使用。可访问UI设计采用强色彩对比和清晰视觉等级。确保包容设计和通用可用性。",
+            "en-US": "Accessible UI design with strong color contrast, clear visual hierarchy, and keyboard-friendly interface patterns Ensures usability for all users including those with visual or motor impairments through thoughtful design ensuring inclusive user experiences for all Ensures inclusive digital experiences for users with visual impairments. Prioritizes contrast, clarity, and keyboard navigation throughout This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. inclusive design ensuring universal usability."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/accessibility/custom.md",
+            "style": "prompts/visual/accessibility/style.md"
+          }
+        },
+        {
+          "id": "visual-ambient",
+          "familyId": "ambient",
+          "category": "visual",
+          "name": {
+            "zh-CN": "环境光",
+            "en-US": "Ambient Light"
+          },
+          "description": {
+            "zh-CN": "柔和光晕搭配径向模糊和氛围渲染，营造出精美的环境光照效果和精致的视觉深度。通过漫射光、圆润边角和梦幻视觉氛围，以空灵的美学和温和的光学特性构建宁静冥想的界面。采用分层阴影技术、焦外虚化效果和环境遮蔽实现自然逼真的深度感知和精致光线互动。创造沉浸式冥想数字环境，完美适用于健康保健应用、冥想平台、水疗服务、正念工具和治疗性界面，需要营造平静氛围、和平视觉语言、精神共鸣，以及富有情感支持的设计，鼓励用户放松身心、冥想反思，并在整个界面中获得恢复性的用户体验。",
+            "en-US": "Soft halo with radial blur and atmospheric rendering creating beautiful ambient lighting effects with sophisticated depth. Builds serene, contemplative interfaces through diffuse light, soft rounded edges, and dreamy visual atmospheres with ethereal aesthetics and gentle luminosity. Produces gentle glow effects through layered shadow techniques, bokeh effects, and ambient occlusion for naturalistic depth perception with refined light interaction. Creates immersive meditative digital environments perfect for wellness applications, meditation platforms, spa services, mindfulness tools, and therapeutic interfaces requiring calming atmospheres, peaceful visual language, spiritual resonance, and emotionally supportive design that encourages relaxation, contemplation, and restorative user experiences throughout the interface."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/ambient/custom.md",
+            "style": "prompts/visual/ambient/style.md"
+          }
+        },
+        {
+          "id": "visual-antiDesign",
+          "familyId": "antiDesign",
+          "category": "visual",
+          "name": {
+            "zh-CN": "反设计工作室",
+            "en-US": "Anti-Design Studio"
+          },
+          "description": {
+            "zh-CN": "大胆实验的风格，打破训讈规则并拒绝既定惯例。创造富有挑战性的训讈，展现叛逆创意和非传统美学。大胆实验风格打破设计规则和拒绝既定约定。创造激发性创意和非约定表达。",
+            "en-US": "A bold experimental style that breaks design rules and rejects established conventions Creates provocative interfaces through chaotic layouts, unexpected typography, and deliberate violation of design principles for artistic expression for artistic, provocative expression Ideal for artistic projects, experimental interfaces, and provocative applications. Challenges design conventions through deliberate rule-breaking This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. rebellious creativity and unconventional expression. Excellence in design."
+          },
+          "tags": [
+            "contemporary",
+            "bold",
+            "experimental",
+            "creative",
+            "colorful"
+          ],
+          "prompts": {
+            "custom": "prompts/visual/antiDesign/custom.md",
+            "style": "prompts/visual/antiDesign/style.md"
+          }
+        },
+        {
+          "id": "visual-auroraGlass",
+          "familyId": "auroraGlass",
+          "category": "visual",
+          "name": {
+            "zh-CN": "极光玻璃",
+            "en-US": "Aurora Glass"
+          },
+          "description": {
+            "zh-CN": "极光色彩搭配动态光影和流动透明的风格。采用彩虹色渐变和玻璃态效果营造魔幻梦幻氛围和视觉奇妙感。梯度极光色彩搭配动态光线和流动透明。为魔法应用和梦幻用户体验。",
+            "en-US": "Gradient aurora colors with dynamic lighting and flowing transparency creating ethereal visual effects. Combines iridescent color shifts, glass morphism, and flowing animations for magical, otherworldly experiences. Perfect for fantasy applications, premium brands, and dreamlike user experiences. Creates immersive environments with ethereal light effects, magical atmosphere, and dreamlike visual quality throughout the interface, enhancing user engagement through mesmerizing visual storytelling and captivating aesthetic experiences. Provides comprehensive design guidance with sophisticated visual principles and strategic implementation approaches. Enhances user engagement through mesmerizing gradient effects and sophisticated transparency layering with magical visual storytelling."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/auroraGlass/custom.md",
+            "style": "prompts/visual/auroraGlass/style.md"
+          }
+        },
+        {
+          "id": "visual-bentoGrids",
+          "familyId": "bentoGrids",
+          "category": "visual",
+          "name": {
+            "zh-CN": "便当盒网格",
+            "en-US": "Bento Grids"
+          },
+          "description": {
+            "zh-CN": "便当盒风格的网格布局，支持不同尺寸的卡片和现代组织方法。创造灵活的版面，适合内容多样化的应用。，创造灵活的版面和现代组织方法。便当盒网格布局采用不同卡片尺寸和现代组织。创造灵活布局和有组织的组合。",
+            "en-US": "Bento box style grid layouts with varied card sizes and modern organization methods Creates flexible, asymmetrical compositions inspired by Japanese bento box arrangement for contemporary, playful interfaces for modern, flexible layouts Offers flexible, asymmetrical layouts for modern applications Ideal for portfolio sites, dashboard applications, and content curation This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. modern layout flexibility and organized composition. Excellence in design."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/bentoGrids/custom.md",
+            "style": "prompts/visual/bentoGrids/style.md"
+          }
+        },
+        {
+          "id": "visual-biophilic",
+          "familyId": "biophilic",
+          "category": "visual",
+          "name": {
+            "zh-CN": "亲生物设计",
+            "en-US": "Biophilic Design"
+          },
+          "description": {
+            "zh-CN": "Biophilic Design 是亲生物设计风格，适合健康、环保和生活方式类应用。将自然元素融入数字界面，使用绿色调、有机形状、流动曲线和自然纹理，营造.生物亲合设计风格适合健康和生活方式。融合自然元素促进健康和环保意识。",
+            "en-US": "Biophilic Design style is suitable for health, environmental, and lifestyle creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface development This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. natural elements promoting wellness and environmental consciousness. Excellence in design."
+          },
+          "tags": [
+            "biophilic",
+            "nature",
+            "organic",
+            "wellness",
+            "meditation"
+          ],
+          "prompts": {
+            "custom": "prompts/visual/biophilic/custom.md",
+            "style": "prompts/visual/biophilic/style.md"
+          }
+        },
+        {
+          "id": "visual-blueprint",
+          "familyId": "blueprint",
+          "category": "visual",
+          "name": {
+            "zh-CN": "Blueprint（蓝图风格）",
+            "en-US": "Blueprint"
+          },
+          "description": {
+            "zh-CN": "技术蓝图风格的介面，采用工程绘图美学。展现严谨的结构化布局和专业技术氛围。适合工程和技术应用。，展现严谨的结构化布局和专业技术氛围。技术蓝图风格采用工程图纸美学，展现严谨结构化布局。适合技术仪表板和工程应用。",
+            "en-US": "Technical blueprint-style interface design with authentic engineering drawing aesthetics, showcasing rigorous structured layouts and professional technical atmospheres. Ideal for engineering applications, technical dashboards, CAD software, industrial control systems, architectural tools, research platforms, and professional environments requiring precise grid-based composition, systematic organization, technical clarity, measurement accuracy, and structured information hierarchy for complex data visualization and sophisticated engineering workflows across diverse multi-disciplinary projects. precise structured organization and comprehensive technical documentation. Ensures exceptional design quality through strategic principles and thoughtful implementation. Delivers technical clarity with precise structured organization and comprehensive data visualization."
+          },
+          "tags": [
+            "technical",
+            "engineering",
+            "grid",
+            "professional"
+          ],
+          "prompts": {
+            "custom": null,
+            "style": "prompts/visual/blueprint/style.md"
+          }
+        },
+        {
+          "id": "visual-claymorphism",
+          "familyId": "claymorphism",
+          "category": "visual",
+          "name": {
+            "zh-CN": "黏土质感",
+            "en-US": "Claymorphism"
+          },
+          "description": {
+            "zh-CN": "Claymorphism 是 3D 黏土质感设计风格，适合创意设计、插画风格和儿童产品。通过多层内外阴影、柔和的色彩渐变和圆润的造型，创造如同真实黏土般的.粘土质感3D设计风格适合创意设计和插画。创造柔软雕塑美学和创意活泼。",
+            "en-US": "Claymorphism is a 3D clay texture design style, suitable for creative design, illustration style, and children's creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface development Creates tactile, approachable interfaces with 3D clay-like effects Ideal for children's applications, creative tools, and playful experiences This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. soft sculptural aesthetics and creative playfulness."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/claymorphism/custom.md",
+            "style": "prompts/visual/claymorphism/style.md"
+          }
+        },
+        {
+          "id": "visual-comicBook",
+          "familyId": "comicBook",
+          "category": "visual",
+          "name": {
+            "zh-CN": "Comic Book（漫画书）",
+            "en-US": "Comic Book"
+          },
+          "description": {
+            "zh-CN": "经典美式漫画风格，采用分格布局、动作线条和对话气泡。使用半色谾点阵和漫画视觉语言创造动态叙事。，使用半色谾点阵和漫画视觉语言创造动态叙事。经典美式漫画风格采用分格布局和动作线条。采用视觉叙事和表达插画风格。",
+            "en-US": "Classic American comic book style featuring panel layouts, action lines, and speech bubbles. Uses halftone dots, bold outlines, dynamic compositions, and expressive lettering from comic book visual language. Excellent for action games, adventure applications, and narrative-driven content. Uses visual storytelling techniques with dynamic visual narrative and expressive illustration styles for engaging user experiences through compelling sequential narrative design. Delivers sophisticated visual design with comprehensive aesthetic guidance, strategic layout implementation, and advanced composition strategies. Creates narrative-driven experiences with sequential visual design principles and dynamic illustration-based storytelling approaches."
+          },
+          "tags": [
+            "comic",
+            "action",
+            "superhero",
+            "panels",
+            "dynamic"
+          ],
+          "prompts": {
+            "custom": null,
+            "style": "prompts/visual/comicBook/style.md"
+          }
+        },
+        {
+          "id": "visual-cube3d",
+          "familyId": "cube3d",
+          "category": "visual",
+          "name": {
+            "zh-CN": "3D 立方体",
+            "en-US": "3D Cube"
+          },
+          "description": {
+            "zh-CN": "六面立方体，透视旋转，完整 3D 结构，征和应用场景，为用户界面设计提供创意灵感。六面立方体搭配透视旋转和完整3D结构。创造沉浸式三维交互可视化。",
+            "en-US": "Six-sided cube with perspective rotation and complete 3D structure creating immersive and engaging digital experiences. Features thoughtful design principles, modern aesthetics, and user-centered approach to interface development. Perfect for showcase applications, product displays, and portfolio presentations requiring immersive three-dimensional interactive visualization with sophisticated depth and responsive animation capabilities. This exceptional design system provides comprehensive visual guidance with refined aesthetic principles, strategic design implementation, advanced visual composition techniques, and sophisticated user experience optimization. Delivers immersive three-dimensional experiences with advanced animation capabilities and sophisticated visual depth implementation."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/cube3d/custom.md",
+            "style": "prompts/visual/cube3d/style.md"
+          }
+        },
+        {
+          "id": "visual-darkMode",
+          "familyId": "darkMode",
+          "category": "visual",
+          "name": {
+            "zh-CN": "深色模式",
+            "en-US": "Dark Mode"
+          },
+          "description": {
+            "zh-CN": "深色模式，采用深色色谾和高对比度创造舒适视觉。提供眼睛友好的深色美学和精细的视觉平衡。，提供眼睛友好的深色美学和精细视觉平衡。深色模式设计采用深色调和高对比度。创造眼睛友好的深色美学和精致平衡。",
+            "en-US": "Dark mode design with deep colors, high contrast, and comfortable visual creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface development This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. eye-friendly dark aesthetics and refined visual balance. Excellence in design."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/darkMode/custom.md",
+            "style": "prompts/visual/darkMode/style.md"
+          }
+        },
+        {
+          "id": "visual-duotone",
+          "familyId": "duotone",
+          "category": "visual",
+          "name": {
+            "zh-CN": "双色调",
+            "en-US": "Duotone"
+          },
+          "description": {
+            "zh-CN": "双色谾色彩方案，使用两种对比色创造戏剧性视觉效果。通过大胆对比和动态构图实现视觉冲击。，通过大胆对比和动态构图实现视觉冲击。双色调色方案采用两种对比色创造戏剧视觉。提供大胆对比和戏剧视觉冲击。",
+            "en-US": "Duotone color scheme using two contrasting colors for dramatic visual creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface development This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. bold contrast and dramatic visual impact. Excellence in design. Delivers bold visual impact with strategic color contrast and dramatic composition."
+          },
+          "tags": [
+            "duotone",
+            "high-contrast",
+            "bold",
+            "brand",
+            "visual-impact"
+          ],
+          "prompts": {
+            "custom": "prompts/visual/duotone/custom.md",
+            "style": "prompts/visual/duotone/style.md"
+          }
+        },
+        {
+          "id": "visual-fabric",
+          "familyId": "fabric",
+          "category": "visual",
+          "name": {
+            "zh-CN": "织物纹理",
+            "en-US": "Fabric Texture"
+          },
+          "description": {
+            "zh-CN": "织物纹理风格，采用布料纹理和交错效果。创造触觉感和真实感，展现织物材质特性和视觉质感。织物纹理搭配布料质感和交织效果。创造纹理丰富的沉浸数字体验。",
+            "en-US": "Woven patterns with cloth texture and interlaced creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface development This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. tactile realism and authentic material representation. Delivers exceptional visual quality and sophisticated design excellence."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/fabric/custom.md",
+            "style": "prompts/visual/fabric/style.md"
+          }
+        },
+        {
+          "id": "visual-generativeArt",
+          "familyId": "generativeArt",
+          "category": "visual",
+          "name": {
+            "zh-CN": "生成艺术",
+            "en-US": "Generative Art"
+          },
+          "description": {
+            "zh-CN": "生成艺术风格，采用演算法创建图案、粒子和动态视觉。创造动态视觉、互动艺术体验和程序化美学。生成艺术设计采用算法创建模式和粒子。生成动态模式和视觉创意。",
+            "en-US": "Generative art design with algorithmically created patterns, particles, and dynamic visual creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface development This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. algorithmic creativity and dynamic pattern generation. Excellence in design."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/generativeArt/custom.md",
+            "style": "prompts/visual/generativeArt/style.md"
+          }
+        },
+        {
+          "id": "visual-glassmorphism",
+          "familyId": "glassmorphism",
+          "category": "visual",
+          "name": {
+            "zh-CN": "Glassmorphism（玻璃态）",
+            "en-US": "Glassmorphism"
+          },
+          "description": {
+            "zh-CN": "玻璃态风格，采用毛玻璃效果和背景模糊。创造现代透明介面、精致视觉级和浮动感视觉体验。玻璃态效果搭配模糊背景，创造透明浮动的轻盈视觉体验。完美适用于现代科技应用。",
+            "en-US": "Create modern, translucent interfaces with frosted glass effects and sophisticated background blur, delivering a lightweight floating visual experience. Perfect for fintech applications, SaaS products, premium brands, cryptocurrency platforms, cloud services, streaming services, mobile applications, and innovative technology-forward projects requiring contemporary aesthetics, visual sophistication, refined minimalist design language with subtle depth, smooth natural layering effects, and truly elegant transparency hierarchy system ensuring sophisticated visual design excellence. Provides comprehensive design guidance with sophisticated visual principles and strategic implementation approaches. Ensures sophisticated transparency layering and refined visual hierarchy throughout the design system."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/glassmorphism/custom.md",
+            "style": "prompts/visual/glassmorphism/style.md"
+          }
+        },
+        {
+          "id": "visual-glow",
+          "familyId": "glow",
+          "category": "visual",
+          "name": {
+            "zh-CN": "发光效果",
+            "en-US": "Glow Effect"
+          },
+          "description": {
+            "zh-CN": "盒阴影发光效果，搭配脉冲动画和呼吸效果。创造发光粒子系统视觉，展现动态光线互动。，创造发光粒子系统视觉，展现动态光线互动。盒阴影光晕搭配脉冲动画和呼吸效果。生成动态光晕和视觉活力。",
+            "en-US": "Box-shadow glow with pulse animation and breathing creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface development This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. ambient illumination and dynamic light interaction effects. Delivers exceptional visual quality and sophisticated design excellence."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/glow/custom.md",
+            "style": "prompts/visual/glow/style.md"
+          }
+        },
+        {
+          "id": "visual-gradients",
+          "familyId": "gradients",
+          "category": "visual",
+          "name": {
+            "zh-CN": "Gradients 渐变",
+            "en-US": "Gradients"
+          },
+          "description": {
+            "zh-CN": "充满活力的渐变风格，采用平滑色彩过渡和现代美学。提供色彩动态演变、视觉深度和流畅视觉过渡。充满活力的渐变设计搭配平滑色彩过渡和现代感。提供流畅色彩进化和动态视觉演进。",
+            "en-US": "Vibrant gradient designs with smooth color transitions and modern creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface development This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. smooth color transitions and dynamic visual evolution. Excellence in design. Provides smooth visual transitions with dynamic color evolution and modern aesthetic excellence."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/gradients/custom.md",
+            "style": "prompts/visual/gradients/style.md"
+          }
+        },
+        {
+          "id": "visual-grain",
+          "familyId": "grain",
+          "category": "visual",
+          "name": {
+            "zh-CN": "颗粒噪点",
+            "en-US": "Grain Noise"
+          },
+          "description": {
+            "zh-CN": "SVG杂讯效果，采用胶片纹理和复古风格。创造复古真实性和怀旧视觉特性。SVG 噪点搭配电影纹理和复古效果。创造复古真实感和怀旧视觉特征。",
+            "en-US": "SVG noise with film texture and vintage creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface development This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. vintage authenticity and nostalgic visual character. Delivers exceptional visual quality and sophisticated design excellence."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/grain/custom.md",
+            "style": "prompts/visual/grain/style.md"
+          }
+        },
+        {
+          "id": "visual-handDrawnSketch",
+          "familyId": "handDrawnSketch",
+          "category": "visual",
+          "name": {
+            "zh-CN": "手绘涂鸦",
+            "en-US": "Hand-Drawn Sketch"
+          },
+          "description": {
+            "zh-CN": "通过手写字体、SVG 滤镜和随性线条创造温暖亲切的视觉体验。结合粘贴便签、网格纸背景和手绘边框元素，营造友好轻松的设计氛围。完美适用于现代应用的独特视觉语言。融合美学原理与功能设计元素，创造引人入胜的用户体验。",
+            "en-US": "Create warm and approachable visual experiences through handwritten fonts, SVG filters, and casual sketched elements. Perfect for creative applications, children's products, educational platforms, design portfolios, note-taking apps, journaling tools, creative services, and innovative brands seeking friendly, organic aesthetics with genuine personable charm, authentic artistic expression, and exceptionally thoughtful design combining playfulness with meaningful functionality in truly accessible, inclusive digital environments with artistic authenticity and emotional resonance. Ensures exceptional design quality through strategic principles and thoughtful implementation. Combines authentic artistic expression with intuitive user experience design promoting creative engagement."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/handDrawnSketch/custom.md",
+            "style": "prompts/visual/handDrawnSketch/style.md"
+          }
+        },
+        {
+          "id": "visual-holographic",
+          "familyId": "holographic",
+          "category": "visual",
+          "name": {
+            "zh-CN": "全息渐变",
+            "en-US": "Holographic Gradient"
+          },
+          "description": {
+            "zh-CN": "彩虹光谱搭配动态色谾旋转和未来感效果。创造动态视觉效果、全息氛围和光学变彩视觉。彩虹光谱搭配动态色调旋转和未来感。生成全息色彩过渡和动态视觉效果。",
+            "en-US": "Rainbow spectrum with dynamic hue rotation and futuristic creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface development This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. iridescent color transitions and dynamic visual effects. Delivers exceptional visual quality and sophisticated design excellence."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/holographic/custom.md",
+            "style": "prompts/visual/holographic/style.md"
+          }
+        },
+        {
+          "id": "visual-holographicFoil",
+          "familyId": "holographicFoil",
+          "category": "visual",
+          "name": {
+            "zh-CN": "全息箔效果",
+            "en-US": "Holographic Foil"
+          },
+          "description": {
+            "zh-CN": "全息箔纸效果，采用彩虹色和虹彩色谾。创造反射表面特性、彩虹色位移效果和光学变彩感。全息箔纸效果搭配虹色和彩虹色转移。反射表面特性和彩虹色转移。",
+            "en-US": "Holographic foil effect with iridescent colors and rainbow creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface development This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. reflective surface properties and rainbow color shifting. Delivers exceptional visual quality and sophisticated design excellence."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/holographicFoil/custom.md",
+            "style": "prompts/visual/holographicFoil/style.md"
+          }
+        },
+        {
+          "id": "visual-industrial",
+          "familyId": "industrial",
+          "category": "visual",
+          "name": {
+            "zh-CN": "工业设计",
+            "en-US": "Industrial Design"
+          },
+          "description": {
+            "zh-CN": "Industrial Design 是工业设计风格，适合技术类产品、后台管理系统和专业工具。强调功能性和实用主义美学，使用深色调、粗体大写字体、网格纹理和.工业设计风格适合技术产品和后台管理系统。强调功能性和实用主义美学，采用深色调和粗体大写排版。",
+            "en-US": "Industrial Design style is suitable for technical products, backend management systems, professional tools, manufacturing software, data analysis platforms, heavy-use applications, and complex industrial systems. Emphasizes strong functionality and utilitarian aesthetics using dark tones, bold uppercase typography, grid textures, and sophisticated mechanical elements. Creates exceptionally robust, no-nonsense interfaces prioritizing efficiency, information clarity, quick navigation, and task completion over decorative visual elements with uncompromising technical precision and unwavering performance standards. Ensures exceptional design quality through strategic principles and thoughtful implementation. Emphasizes robust performance standards with unwavering technical excellence and precision."
+          },
+          "tags": [
+            "industrial",
+            "utilitarian",
+            "technical",
+            "dark-theme"
+          ],
+          "prompts": {
+            "custom": "prompts/visual/industrial/custom.md",
+            "style": "prompts/visual/industrial/style.md"
+          }
+        },
+        {
+          "id": "visual-inkWash",
+          "familyId": "inkWash",
+          "category": "visual",
+          "name": {
+            "zh-CN": "Ink Wash（水墨）",
+            "en-US": "Ink Wash"
+          },
+          "description": {
+            "zh-CN": "传统中国水墨画启发的风格，采用水墨渐变和有意义的构图。结合传统美学与当代数位训讈、东方美感。传统中国水墨画启发的设计风格，采用水墨渐变和意义笔划。融合传统美学与当代数字设计。",
+            "en-US": "Design style inspired by traditional Chinese ink wash painting, featuring ink gradients, meaningful whitespace, brush stroke textures, and Eastern aesthetic creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface development This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. traditional aesthetic meets contemporary digital design. Ensures exceptional design quality through strategic principles and thoughtful implementation. Combines traditional aesthetics with contemporary digital design for sophisticated artistic expression."
+          },
+          "tags": [
+            "chinese",
+            "traditional",
+            "artistic",
+            "zen",
+            "minimalist"
+          ],
+          "prompts": {
+            "custom": "prompts/visual/inkWash/custom.md",
+            "style": "prompts/visual/inkWash/style.md"
+          }
+        },
+        {
+          "id": "visual-kawaiiMinimal",
+          "familyId": "kawaiiMinimal",
+          "category": "visual",
+          "name": {
+            "zh-CN": "可爱极简",
+            "en-US": "Kawaii Minimal"
+          },
+          "description": {
+            "zh-CN": "结合日系可爱元素与现代极简设计理念的温柔美学。采用柔和的粉彩配色、圆润的边角、俏皮的动画效果和温暖的视觉语言，营造出友好、治愈的用户体验。适合创意工具、个人看板、生活方式应用等需要温馨氛围的场景。",
+            "en-US": "A gentle aesthetic that combines Japanese kawaii elements with modern minimalist design principles. Features soft pastel colors, rounded corners, playful animations, and warm visual language to create a friendly and healing user experience. Ideal for creative tools, personal dashboards, lifestyle applications, and scenarios that require a warm atmosphere."
+          },
+          "tags": [
+            "contemporary",
+            "minimal",
+            "colorful",
+            "playful",
+            "creative",
+            "soft",
+            "friendly"
+          ],
+          "prompts": {
+            "custom": "prompts/visual/kawaiiMinimal/custom.md",
+            "style": "prompts/visual/kawaiiMinimal/style.md"
+          }
+        },
+        {
+          "id": "visual-texture-leather",
+          "familyId": "leather",
+          "category": "visual",
+          "name": {
+            "zh-CN": "皮革质感",
+            "en-US": "Leather Texture"
+          },
+          "description": {
+            "zh-CN": "深色皮革面板风格，采用径向渐变和皱纹纹理。通过皮革特性营造厚重奢华的视觉体验和高级感。皮革质感风格采用径向渐变、噪点纹理和缝线细节。营造厚重奢华的视觉体验，适合高端应用。",
+            "en-US": "Dark leather panel style with radial gradients, noise textures, fine stitching details and metallic accents creating luxurious visual experiences. Perfect for premium applications, luxury brands, exclusive products, financial dashboards, high-end e-commerce platforms, luxury services, boutique applications, and sophisticated interfaces requiring tactile realism, elegant aesthetics, premium perception, and enhanced perceived value through authentic material simulation and truly exceptional visual quality refinement. enhancing premium perception and authentic material authenticity. Ensures exceptional design quality through strategic principles and thoughtful implementation. Enhances premium perception through authentic material representation and sophisticated tactile design."
+          },
+          "tags": [
+            "classic",
+            "depth",
+            "creative",
+            "enterprise"
+          ],
+          "prompts": {
+            "custom": "prompts/visual/leather/custom.md",
+            "style": "prompts/visual/leather/style.md"
+          }
+        },
+        {
+          "id": "visual-light",
+          "familyId": "light",
+          "category": "visual",
+          "name": {
+            "zh-CN": "光效设计",
+            "en-US": "Light Effects"
+          },
+          "description": {
+            "zh-CN": "霓虹、环境和聚光灯效果的光线，透过多层阴影和发光效果。建构发光效果、闪耀光线互动和光学特效。创建霓虹、环境和聚光灯效果通过多层阴影。构建发光效果和辐射视觉呈现。",
+            "en-US": "Create neon, ambient, and spotlight effects through multi-layer shadows, glow, and blur effects Builds dramatic lighting scenarios with bokeh, halos, and luminous elements for atmospheric visual impact for dramatic, atmospheric lighting effects Generates dramatic, theatrical lighting effects Ideal for entertainment applications, showcase platforms, and visually striking experiences This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. luminous effects and radiant visual presence. Excellence in design."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/light/custom.md",
+            "style": "prompts/visual/light/style.md"
+          }
+        },
+        {
+          "id": "visual-liminalSpace",
+          "familyId": "liminalSpace",
+          "category": "visual",
+          "name": {
+            "zh-CN": "Liminal Space 边界空间",
+            "en-US": "Liminal Space"
+          },
+          "description": {
+            "zh-CN": "空灵过渡空间风格，代表两个状态之间的存在。创造不安定但引人思考的氛围、心理学感受和超现实感。模糊过渡空间设计代表两个状态之间的存在。创造心理模糊和冥想氛围。",
+            "en-US": "Ambiguous transitional space design representing existence between two states Creates unsettling yet beautiful interfaces inspired by liminal space aesthetic: empty corridors, abandoned buildings, and in-between moments for unsettling, contemplative aesthetics Creates unique, unsettling aesthetic spaces Perfect for experimental art, game environments, and contemplative applications This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. psychological ambiguity and contemplative atmosphere. Delivers exceptional visual quality and sophisticated design excellence."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/liminalSpace/custom.md",
+            "style": "prompts/visual/liminalSpace/style.md"
+          }
+        },
+        {
+          "id": "visual-liquid",
+          "familyId": "liquid",
+          "category": "visual",
+          "name": {
+            "zh-CN": "液体流动",
+            "en-US": "Liquid Motion"
+          },
+          "description": {
+            "zh-CN": "流动动画搭配径向渐变和模糊混合的。创造液体视觉效果、形态变化的视觉转换和流体美学。变形动画搭配径向渐变和模糊混合。创造流体动画和变形视觉过渡。",
+            "en-US": "Morphing animation with radial gradients and blur blending creating fluid visual effects Combines organic shape transformations, flowing color transitions, and liquid-like fluidity for dynamic, biomorphic designs for organic, fluid visual motion Brings organic fluidity and morphing animations to interfaces Ideal for biomorphic applications, creative tools, and dynamic experiences This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. fluid animation and morphing visual transformation. Excellence in design."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/liquid/custom.md",
+            "style": "prompts/visual/liquid/style.md"
+          }
+        },
+        {
+          "id": "visual-memphis",
+          "familyId": "memphis",
+          "category": "visual",
+          "name": {
+            "zh-CN": "孟菲斯风格",
+            "en-US": "Memphis"
+          },
+          "description": {
+            "zh-CN": "1980年代义大利运动，以大胆色彩、几何形状和非对称布局为特色。透过充满活力的构图和大胆图案创造活泼、富有表现力的介面。适合创意专案和视觉故事讲述。1980年代意大利设计运动，采用大胆色彩、几何形状和不对称布局。创造充满活力和几何大胆的设计。",
+            "en-US": "Memphis design style with bold patterns, geometric shapes, and vibrant creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface development This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. vibrant playfulness and geometric boldness. Delivers exceptional visual quality and sophisticated design excellence."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/memphis/custom.md",
+            "style": "prompts/visual/memphis/style.md"
+          }
+        },
+        {
+          "id": "visual-monochrome",
+          "familyId": "monochrome",
+          "category": "visual",
+          "name": {
+            "zh-CN": "单色",
+            "en-US": "Monochrome"
+          },
+          "description": {
+            "zh-CN": "单色风格，仅使用黑、白和灰色创造优雅介面。通过灰度实现永恒优雅、精致视觉平衡和简洁美学。单色设计仅采用黑白灰创造优雅界面。实现永恒优雅通过灰度精妙。",
+            "en-US": "Monochromatic design using only black, white, and gray tones to create elegant interfaces. Achieves sophisticated aesthetics through subtle tonal variations, contrast manipulation, and achromatic color discipline for elegant, timeless visual design Creates elegant simplicity through achromatic design Perfect for sophisticated brands, editorial applications, and minimalist experiences This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. timeless elegance through grayscale sophistication. Excellence in design. Achieves timeless elegance through sophisticated grayscale design with refined visual balance."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/monochrome/custom.md",
+            "style": "prompts/visual/monochrome/style.md"
+          }
+        },
+        {
+          "id": "visual-natural",
+          "familyId": "natural",
+          "category": "visual",
+          "name": {
+            "zh-CN": "Natural 自然风格",
+            "en-US": "Natural"
+          },
+          "description": {
+            "zh-CN": "自然和有机风格，采用大地色谾和植物元素。展现自然温暖、有机视觉特性和环保色彩谾和。自然有机设计受自然启发采用土色调和植物元素。融合植物学元素与丰富自然温暖。",
+            "en-US": "Natural and organic design inspired by nature with earthy tones, botanical elements, and rich natural textures Incorporates organic shapes and earth-tone palettes creating harmonious, nature-connected digital experiences and sustainable aesthetics Incorporates nature-inspired elements and organic aesthetics Ideal for wellness applications, environmental platforms, and nature-focused content This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. organic authenticity and earthy visual warmth. Excellence in design. Integrates botanical elements with earthy visual warmth and organic aesthetic principles."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/natural/custom.md",
+            "style": "prompts/visual/natural/style.md"
+          }
+        },
+        {
+          "id": "visual-nature",
+          "familyId": "nature",
+          "category": "visual",
+          "name": {
+            "zh-CN": "自然元素",
+            "en-US": "Nature Elements"
+          },
+          "description": {
+            "zh-CN": "自然元素视觉效果家族，包含极光、波浪、粒子、液体和烟雾五种自然现象的动态模拟。通过 CSS 动画、SVG 路径和滤镜效果实现流动、飘渺、有机的视觉体验。自然启发的视觉效果家族，采用极光、波浪和粒子效果。创造自然生物启发的沉浸体验。",
+            "en-US": "Nature-inspired visual effects family featuring aurora, waves, particles, liquid, and smoke creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface development Celebrates natural phenomena through visual effects Perfect for environmental applications, nature documentation, and ecological content. biophilic design principles and natural element integration. Ensures exceptional design quality through strategic principles and thoughtful implementation. Integrates natural elements promoting environmental consciousness and biophilic design principles."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/nature/custom.md",
+            "style": "prompts/visual/nature/style.md"
+          }
+        },
+        {
+          "id": "visual-neoBrutalism",
+          "familyId": "neoBrutalism",
+          "category": "visual",
+          "name": {
+            "zh-CN": "新粗野主义",
+            "en-US": "Neo-Brutalism"
+          },
+          "description": {
+            "zh-CN": "当代粗野主义风格，采用高对比、粗体边框和鲜艳霓虹色。融合数位原始性、当代大胆风格和视觉冲击。大胆原始设计风格采用高对比、粗边框和活跃霓虹色彩。融合数字粗野和当代大胆。",
+            "en-US": "Bold, raw design style with high contrast, thick borders, and vibrant neon colors Combines digital brutalism's harsh aesthetics with contemporary neon and saturated colors creating powerful visual statements for bold, contemporary digital aesthetics Creates bold, high-contrast digital environments Perfect for contemporary brands, experimental applications, and statements-making design This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. digital rawness and contemporary boldness. Excellence in design."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/neoBrutalism/custom.md",
+            "style": "prompts/visual/neoBrutalism/style.md"
+          }
+        },
+        {
+          "id": "visual-neon",
+          "familyId": "neon",
+          "category": "visual",
+          "name": {
+            "zh-CN": "霓虹发光",
+            "en-US": "Neon Glow"
+          },
+          "description": {
+            "zh-CN": "多层文字阴影搭配电子效果和闪烁动画的。创造强烈霓虹发光效果、高能视觉和电子光学美学。多层文本阴影搭配电气效果和闪烁动画，创造强烈霓虹光芒。模拟霓虹灯效果的电气活力。",
+            "en-US": "Multi-layer text-shadow with electric effects and flicker animation creating intense neon glow. Simulates authentic neon tube lighting through luminous shadows, color bleeding, and flickering dynamics with vibrant, electrifying visual aesthetics Generates vibrant glowing effects and electric aesthetics Ideal for nightlife applications, entertainment, and energetic experiences This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. electric vibrancy and high-energy visual excitement. Excellence in design. Simulates intense electric vibrancy with high-energy visual excitement and dynamic glow effects."
+          },
+          "tags": [
+            "neon",
+            "colorful",
+            "futuristic",
+            "contemporary"
+          ],
+          "prompts": {
+            "custom": "prompts/visual/neon/custom.md",
+            "style": "prompts/visual/neon/style.md"
+          }
+        },
+        {
+          "id": "visual-neonCyberpunk",
+          "familyId": "neonCyberpunk",
+          "category": "visual",
+          "name": {
+            "zh-CN": "霓虹赛博朋克",
+            "en-US": "Neon Cyberpunk"
+          },
+          "description": {
+            "zh-CN": "霓虹赛博朋克风格，采用鲜艳霓虹色和深色背景。创造未来感紫红色谾、数位反叛精神和赛博美学。霓虹赛博朋克设计采用充满活力的霓虹色彩和深色背景。融合数字科技与视觉反叛。",
+            "en-US": "Neon cyberpunk design with vibrant neon colors, dark backgrounds, and futuristic tech creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface development Creates immersive cyberpunk-inspired digital environments Perfect for gaming, sci-fi applications, and futuristic experiences This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. futuristic dystopian aesthetics and digital rebellion. Delivers exceptional visual quality and sophisticated design excellence."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/neonCyberpunk/custom.md",
+            "style": "prompts/visual/neonCyberpunk/style.md"
+          }
+        },
+        {
+          "id": "visual-neonNoir",
+          "familyId": "neonNoir",
+          "category": "visual",
+          "name": {
+            "zh-CN": "Neon Noir 霓虹黑色电影",
+            "en-US": "Neon Noir"
+          },
+          "description": {
+            "zh-CN": "霓虹黑色电影风格，融合赛博朋克美学和电影黑色谾。创造神秘氛围、紧张感和电影化视觉语言。霓虹黑色电影融合赛博朋克和电影黑色电影氛围。创造神秘心情和大气紧张。",
+            "en-US": "Neon noir design combining cyberpunk aesthetics with film noir atmosphere creating moody mystery. Blends neon lighting with dark detective film style through contrasting colors, atmospheric depth, and dramatic lighting for moody, mysterious atmospheres Combines neon aesthetics with film noir atmosphere Ideal for mystery applications, noir-inspired content, and moody experiences This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. mysterious mood and atmospheric tension. Excellence in design."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/neonNoir/custom.md",
+            "style": "prompts/visual/neonNoir/style.md"
+          }
+        },
+        {
+          "id": "visual-organic",
+          "familyId": "organic",
+          "category": "visual",
+          "name": {
+            "zh-CN": "现代有机设计",
+            "en-US": "Modern Organic"
+          },
+          "description": {
+            "zh-CN": "自然有机风格，采用流动动画和温暖大地色谾。展现生物形态形状、有机美学和自然流动感。自然有机设计风格采用流动动画和温暖土色调。特色生物形态和流动自然形态。",
+            "en-US": "Natural organic design style with flowing animations and warm earth tones Features biomorphic shapes, flowing curves, and natural color palettes creating harmonious and approachable digital environments for warm, inviting interfaces Brings natural, flowing organic shapes and motion Perfect for wellness applications, nature-inspired brands, and biomorphic experiences This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. flowing natural forms and biomorphic design language. Excellence in design."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/organic/custom.md",
+            "style": "prompts/visual/organic/style.md"
+          }
+        },
+        {
+          "id": "visual-outlineStyle",
+          "familyId": "outlineStyle",
+          "category": "visual",
+          "name": {
+            "zh-CN": "线条风格",
+            "en-US": "Outline Style"
+          },
+          "description": {
+            "zh-CN": "线条轮廓风格，透过线条定义形状强谾最小化和清晰视觉级。创造简洁线条艺术风格和视觉纯净感。设计风格通过线条定义形状，强调极简和清晰视觉。创造极简线条艺术和视觉清晰。",
+            "en-US": "Design style defining shapes through lines, emphasizing minimalism and clear visual hierarchy Creates sophisticated interfaces through outline-based compositions, linear strokes, and geometric line work for elegant, refined design solutions and professional applications Creates refined, elegant interfaces through line-based design Perfect for professional applications, corporate design, and minimalist aesthetics This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. minimalist line art and visual clarity. Excellence in design."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/outlineStyle/custom.md",
+            "style": "prompts/visual/outlineStyle/style.md"
+          }
+        },
+        {
+          "id": "visual-paperCutout",
+          "familyId": "paperCutout",
+          "category": "visual",
+          "name": {
+            "zh-CN": "剪纸风格",
+            "en-US": "Paper Cutout"
+          },
+          "description": {
+            "zh-CN": "纸张剪裁风格，采用分层元素和阴影创造立体剪纸效果。展现精致分层构图、层次深度和纸艺美学。纸质剪贴风格采用分层元素和阴影效果。创造复杂纸质视觉和动态内容组织。",
+            "en-US": "Paper cutout design style with layered elements and shadow creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface development Generates layered, dimensional effects mimicking paper cutting Ideal for craft applications, children's content, and artistic experiences. layered composition for sophisticated visual storytelling. Ensures exceptional design quality through strategic principles and thoughtful implementation. Creates sophisticated layered composition with dynamic visual storytelling and refined shadow effects."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/paperCutout/custom.md",
+            "style": "prompts/visual/paperCutout/style.md"
+          }
+        },
+        {
+          "id": "visual-particle",
+          "familyId": "particle",
+          "category": "visual",
+          "name": {
+            "zh-CN": "粒子系统",
+            "en-US": "Particle System"
+          },
+          "description": {
+            "zh-CN": "小点搭配发光效果和随机浮动的粒子。生成动态粒子效果、互动视觉系统和流动粒子美学。小点搭配光晕和随机漂浮效果。生成动态粒子系统和交互粒子。",
+            "en-US": "Small dots with glow effects and random floating creating particle system visuals Generates dynamic, organic motion through floating particles, light trails, and swarm-like behavioral patterns for immersive animated visual experiences Creates dynamic particle system effects and animations Perfect for background effects, interactive experiences, and motion design This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. dynamic motion and interactive particle systems. Excellence in design."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/particle/custom.md",
+            "style": "prompts/visual/particle/style.md"
+          }
+        },
+        {
+          "id": "visual-popArt",
+          "familyId": "popArt",
+          "category": "visual",
+          "name": {
+            "zh-CN": "Pop Art（波普艺术）",
+            "en-US": "Pop Art"
+          },
+          "description": {
+            "zh-CN": "流行艺术风格，采用鲜艳对比色和大胆图案。创造视觉冲击和艺术表现力，展现波普艺术美学。流行艺术风格采用鲜艳色彩和大胆视觉冲击。创造充满活力的视觉能量和流行审美。",
+            "en-US": "Pop Art style inspired by Andy Warhol and Roy Lichtenstein, featuring bold primary colors, Ben-Day dots, comic-style outlines, and ironic visual creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface development Brings bold, colorful pop art aesthetics to interfaces Perfect for creative applications, artistic content, and eye-catching experiences This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences."
+          },
+          "tags": [
+            "art",
+            "bold",
+            "colorful",
+            "retro",
+            "graphic"
+          ],
+          "prompts": {
+            "custom": null,
+            "style": "prompts/visual/popArt/style.md"
+          }
+        },
+        {
+          "id": "visual-scandi",
+          "familyId": "scandi",
+          "category": "visual",
+          "name": {
+            "zh-CN": "斯堪的纳维亚风格",
+            "en-US": "Scandinavian"
+          },
+          "description": {
+            "zh-CN": "北欧哲学风格，采用最小化美学和自然原始材质。强谾功能性、永恒简洁美和斯堪地纳维亚美学。斯堪的纳维亚设计哲学采用极简美学和原材料。强调功能性和自然美感。",
+            "en-US": "Scandinavian design philosophy with minimalist aesthetics, natural raw materials, and functional simplicity Creates warm, inviting interfaces through clean layouts, natural wood textures, and hygge-inspired coziness reflecting authentic Nordic design traditions Creates warm, minimalist Nordic design experiences Perfect for home applications, lifestyle brands, and hygge-inspired design This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. timeless simplicity and functional beauty. Delivers exceptional visual quality and sophisticated design excellence."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/scandi/custom.md",
+            "style": "prompts/visual/scandi/style.md"
+          }
+        },
+        {
+          "id": "visual-sciFiHud",
+          "familyId": "sciFiHud",
+          "category": "visual",
+          "name": {
+            "zh-CN": "科幻 HUD",
+            "en-US": "Sci-Fi HUD"
+          },
+          "description": {
+            "zh-CN": "科幻擡头显示器风格，适合数据视觉化和系统监控。展现先进技术氛围、未来感和高科技介面风格。科幻HUD风格适合数据可视化和系统监控。适合未来仪表板和技术呈现。",
+            "en-US": "Science fiction HUD style ideal for data visualization, system monitoring, and futuristic dashboards Features technical overlays, holographic effects, digital readouts, grid systems, and advanced interface elements for deeply immersive experiences Generates futuristic interface elements and holographic effects Ideal for gaming, sci-fi applications, and immersive environments This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. advanced technology visualization and futuristic data presentation. Excellence in design."
+          },
+          "tags": [
+            "futuristic",
+            "data-visuali...",
+            "dashboard",
+            "dark-theme",
+            "tech"
+          ],
+          "prompts": {
+            "custom": "prompts/visual/sciFiHud/custom.md",
+            "style": "prompts/visual/sciFiHud/style.md"
+          }
+        },
+        {
+          "id": "visual-smoke",
+          "familyId": "smoke",
+          "category": "visual",
+          "name": {
+            "zh-CN": "烟雾效果",
+            "en-US": "Smoke Effect"
+          },
+          "description": {
+            "zh-CN": "径向渐变搭配极端模糊和缓慢上升的。生成烟雾视觉效果、气态大气效果和视觉神秘感。径向渐变搭配极端模糊和缓慢上升。生成美丽雾气般的大气效果。",
+            "en-US": "Radial gradients with extreme blur and slow ascent creating beautiful misty atmospheric effects Produces dreamy, ethereal visuals through layered gradients, motion blur, and soft atmospheric perspective for contemplative, evocative experiences Creates ethereal, misty atmospheric effects Perfect for meditative applications, dreamy experiences, and atmospheric design This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. ethereal atmospheric effects and visual mystery. Delivers exceptional visual quality and sophisticated design excellence."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/smoke/custom.md",
+            "style": "prompts/visual/smoke/style.md"
+          }
+        },
+        {
+          "id": "visual-soft-ui",
+          "familyId": "soft-ui",
+          "category": "visual",
+          "name": {
+            "zh-CN": "Soft UI 柔和界面",
+            "en-US": "Soft UI"
+          },
+          "description": {
+            "zh-CN": "柔和圆角与阴影过渡的介面风格，强谾顺滑过渡与亲和力。创造友善舒适的介面和温暖视觉体验。，创造友善舒适的介面和温暖视觉体验。柔和圆角搭配温和阴影和平滑过渡。强调舒适和亲近感的界面设计。",
+            "en-US": "Soft, rounded interface design with gentle shadows and smooth transitions emphasizing comfort and approachability. Creates friendly interfaces through soft edges, subtle shadows, and smooth motion design for warm, welcoming experiences. Perfect for friendly applications, wellness tools, and user-centered design. Features comfort-focused interface design with approachable aesthetics and emotionally supportive visual language promoting user wellbeing. Delivers sophisticated visual design with comprehensive aesthetic guidance, strategic layout implementation, and advanced composition strategies. Combines comfort-focused design with thoughtful user experience optimization, emphasizing approachability and emotional support throughout the interface design system."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/soft-ui/custom.md",
+            "style": "prompts/visual/soft-ui/style.md"
+          }
+        },
+        {
+          "id": "visual-softUI",
+          "familyId": "softUI",
+          "category": "visual",
+          "name": {
+            "zh-CN": "Soft UI 柔和界面",
+            "en-US": "Soft UI"
+          },
+          "description": {
+            "zh-CN": "柔和、圆角介面搭配温和阴影和平滑过渡。强谾舒适亲和力、温暖体验和友善视觉语言。完美适用于现代应用的独特视觉语言。融合美学原理与功能设计元素，创造引人入胜的用户体验。",
+            "en-US": "Soft, rounded interface design with gentle shadows and smooth transitions emphasizing comfort and approachability Creates friendly interfaces through soft edges, subtle shadows, and smooth motion design for warm, welcoming experiences Brings soft, neumorphic design elements Ideal for modern applications, consumer products, and approachable user experiences This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. comfort-focused interface design and approachable aesthetics. Excellence in design. Emphasizes comfort-focused design with approachable aesthetics and emotionally supportive visual language."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/softUI/custom.md",
+            "style": "prompts/visual/softUI/style.md"
+          }
+        },
+        {
+          "id": "visual-solarpunk",
+          "familyId": "solarpunk",
+          "category": "visual",
+          "name": {
+            "zh-CN": "Solarpunk 太阳庞克",
+            "en-US": "Solarpunk"
+          },
+          "description": {
+            "zh-CN": "阳光朋克风格，融合生态乌托邦和乐观未来愿景。展现永续未来、环保科技美学和乐观视觉。完美适用于现代应用的独特视觉语言。融合美学原理与功能设计元素，创造引人入胜的用户体验。",
+            "en-US": "Eco-futuristic design blending sustainable technology with community-driven vision, emphasizing renewable energy, green innovation, and shared community values for conscious digital design and sustainable creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface development Creates eco-conscious, sustainable design narratives Perfect for environmental applications, sustainable brands, and hopeful futures This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/solarpunk/custom.md",
+            "style": "prompts/visual/solarpunk/style.md"
+          }
+        },
+        {
+          "id": "visual-spotlight",
+          "familyId": "spotlight",
+          "category": "visual",
+          "name": {
+            "zh-CN": "聚光灯",
+            "en-US": "Spotlight"
+          },
+          "description": {
+            "zh-CN": "移动径向光、焦点照明和舞台效果的。产生戏剧性聚光灯效果、焦点突出和舞台光学美学。移动径向光创造焦点照明和舞台效果。生成戏剧光线效果和焦点高亮。",
+            "en-US": "Moving radial light for focal lighting and stage effects creating dramatic visual attention. Produces theatrical lighting through moving spotlight effects, focus highlights, dramatic shadows, and interactive illumination for immersive experiences. Perfect for showcase applications, presentation platforms, and theatrical design. Features theatrical focus with dramatic visual emphasis for engaging user experiences and compelling visual narratives. Delivers sophisticated visual design with comprehensive aesthetic guidance, strategic layout implementation, and advanced composition strategies. Creates theatrical experiences through sophisticated focus control, ensuring dramatic visual emphasis and engaging presentation platform functionality."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/spotlight/custom.md",
+            "style": "prompts/visual/spotlight/style.md"
+          }
+        },
+        {
+          "id": "visual-utilityFirst",
+          "familyId": "utilityFirst",
+          "category": "visual",
+          "name": {
+            "zh-CN": "实用优先",
+            "en-US": "Utility First"
+          },
+          "description": {
+            "zh-CN": "功能优先的哲学风格，最小化自订CSS并聚焦功能构图。强谾实用效率、快速开发和实用美学。功能优先设计哲学强调最小自定义CSS。专注功能组合和实用设计实现。",
+            "en-US": "Utility-first design philosophy with minimal custom CSS focusing on functional composition and reusable patterns Builds rapid interfaces through pre-defined utility classes, compositional styling, and highly maintainable component development best practices Builds rapid, maintainable interfaces through utility-based styling Perfect for development-focused teams and scalable projects This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. functional design efficiency and rapid component composition. Excellence in design. Prioritizes functional efficiency with rapid component composition and practical design implementation."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/utilityFirst/custom.md",
+            "style": "prompts/visual/utilityFirst/style.md"
+          }
+        },
+        {
+          "id": "visual-vaporwave",
+          "familyId": "vaporwave",
+          "category": "visual",
+          "name": {
+            "zh-CN": "蒸汽波",
+            "en-US": "Vaporwave"
+          },
+          "description": {
+            "zh-CN": "80年代电脑美学与网路艺术融合，采用霓虹渐变和全宽。创造实验性网路艺术和数位超现实主义。，创造实验性网路艺术和数位超现实主义。80年代电脑美学和网络艺术融合，采用霓虹渐变。融合实验网络艺术和数字超现实。",
+            "en-US": "Fusion of 80s computer aesthetics and net art with neon gradients and fullwidth creating immersive and engaging digital experiences through thoughtful design principles, modern aesthetics, and user-centered approach to interface development Creates nostalgic 90s aesthetic with dreamy, surreal effects Perfect for retro applications, music platforms, and vaporwave experiences This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. experimental net art and digital surrealism. Excellence in design."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/vaporwave/custom.md",
+            "style": "prompts/visual/vaporwave/style.md"
+          }
+        },
+        {
+          "id": "visual-wabiSabi",
+          "familyId": "wabiSabi",
+          "category": "visual",
+          "name": {
+            "zh-CN": "侘寂风格",
+            "en-US": "Wabi-Sabi"
+          },
+          "description": {
+            "zh-CN": "侘寂哲学，拥抱不完美和自然美与精致最小化美学。展现精致真实性、完美缺陷和东方美学。侘寂设计哲学接纳不完美和自然美。展现精致极简和精致真实性。",
+            "en-US": "Wabi-sabi design philosophy embracing imperfection and natural beauty with refined minimalist aesthetics Celebrates transience, asymmetry, and impermanence through authentic, weathered, and subtly understated design elements creating timeless, contemplative visual experiences Embraces imperfection and transience in design Perfect for artistic applications, contemplative platforms, and authentic experiences This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. imperfect beauty and refined authenticity. Delivers exceptional visual quality and sophisticated design excellence."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/wabiSabi/custom.md",
+            "style": "prompts/visual/wabiSabi/style.md"
+          }
+        },
+        {
+          "id": "visual-y2k",
+          "familyId": "y2k",
+          "category": "visual",
+          "name": {
+            "zh-CN": "Y2K",
+            "en-US": "Y2K Era"
+          },
+          "description": {
+            "zh-CN": "千禧年美学风格，采用玻璃态、气泡装饰和青蓝渐变。展现千禧年怀旧、趣味数位美学和Y2K审美。千禧年设计美学采用玻璃态、气泡装饰和青蓝渐变。营造千禧代怀旧和活泼数字美学。",
+            "en-US": "Millennium design aesthetics with glassmorphism, bubble decorations, cyan-blue gradients, and metallic textures. Captures the futuristic spirit and nostalgic charm of late 90s digital culture and early 2000s design trends for nostalgic digital experiences Evokes millennium aesthetic with glassmorphism and playfulness Perfect for retro applications, creative projects, and nostalgic experiences This design approach offers a distinctive visual language suitable for modern applications. It combines aesthetic principles with functional design elements to create compelling user experiences. millennial nostalgia and playful digital aesthetics."
+          },
+          "tags": [],
+          "prompts": {
+            "custom": "prompts/visual/y2k/custom.md",
+            "style": "prompts/visual/y2k/style.md"
+          }
+        }
+      ]
+    }
+  }
+}
