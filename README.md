@@ -4,7 +4,11 @@
 >
 > 一个开箱即用的离线 UI 风格库 Skill，覆盖 79 个设计风格家族、中英双语 prompt，让 Claude 在生成前端 UI 时有"审美"。
 
-<p>
+<p align="center">
+  <img src="./demo/demo-terminal.gif" alt="ui-styles-skill demo — Claude reads catalog, recommends styles, applies Swiss Design to a project" width="880">
+</p>
+
+<p align="center">
   <img alt="styles" src="https://img.shields.io/badge/styles-79-blueviolet">
   <img alt="languages" src="https://img.shields.io/badge/i18n-zh--CN%20%7C%20en--US-brightgreen">
   <img alt="license" src="https://img.shields.io/badge/license-MIT-blue">
