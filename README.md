@@ -1,5 +1,7 @@
 # ui-styles-skill
 
+[简体中文](./README.md) | [English](./README.en.md)
+
 > Offline UI style library for Claude Code — **79 design styles × bilingual prompts (zh-CN / en-US)**, packaged as a [Claude Code Skill](https://docs.claude.com/en/docs/claude-code/skills).
 >
 > 一个开箱即用的离线 UI 风格库 Skill，覆盖 79 个设计风格家族、中英双语 prompt，让 Claude 在生成前端 UI 时有"审美"。
