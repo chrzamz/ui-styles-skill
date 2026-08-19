@@ -1,3 +1,5 @@
+
+
 # ui-styles-skill
 
 [简体中文](./README.md) | [English](./README.en.md)
@@ -99,7 +101,7 @@ ui-styles-skill/
     ├── core/
     │   └── <familyId>/
     │       ├── style.md  # 风格定义：视觉理念、材质、交互、氛围（"是什么"）
-    │       └── custom.md # 可直接喂给模型的生成式 prompt（"按这个生成代码"）
+    │       └── custom.md # 可直接喂给模型的生成式 prompt（"按这个生成代码"；70/79 提供）
     ├── visual/
     ├── retro/
     ├── layout/
