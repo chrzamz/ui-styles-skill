@@ -20,24 +20,27 @@ If you use this Skill in a project, please consider:
 
 ## What this repository adds on top of upstream
 
-This project is **not a fork** — it is a packaging layer that adapts the
-upstream content for use as a [Claude Code Skill](https://docs.claude.com/en/docs/claude-code/skills):
+This project packages the upstream reference material and adds a product-design
+workflow for agents that support skills and project instructions:
 
 | Component | Source | Notes |
 |---|---|---|
 | `prompts/<category>/<familyId>/style.md` | TonnyWong1052/UI-Prompt | Mirrored 1:1 |
 | `prompts/<category>/<familyId>/custom.md` | TonnyWong1052/UI-Prompt | Mirrored 1:1 |
 | `catalog.json` | This repo | Lightweight index — id / category / tags / prompt paths |
-| `SKILL.md` | This repo | Trigger words, workflow, heuristics for the Claude Code Skill |
-| `README.md` / `LICENSE` / `ATTRIBUTION.md` | This repo | Open-source project scaffolding |
+| `SKILL.md` / `references/` | This repo | Product-design workflow, library selection, portable standards and verification |
+| `scripts/` / `assets/` / `examples/` | This repo | Project integration helpers, starter theme adapters and templates |
+| `skills/ui-style-creator/` | This repo | Project/user custom-style profiles |
+| `tests/` / `evals/` | This repo | Tool validation and behavioral evaluation scenarios |
+| `README.md` / `README.en.md` / `LICENSE` / `ATTRIBUTION.md` | This repo | Open-source project documentation |
 
 ## Snapshot version
 
 - Upstream snapshot taken: **2026-05** (see `catalog.json` → `version`)
 - Total families: 79
 - Families with both `style.md` and `custom.md`: 70
-- Families with only `style.md`: 9 (these can be used to *explain* the style
-  but not to directly generate code — upstream PRs welcome)
+- Families with only `style.md`: 9 (no prepared code-generation prompt;
+  an agent can still create and identify a new adaptation from the definition)
 
 ## License
 

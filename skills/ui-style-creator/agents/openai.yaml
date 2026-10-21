@@ -1,0 +1,6 @@
+interface:
+  display_name: "UI Style Creator"
+  short_description: "Create reusable project or personal visual styles"
+  default_prompt: "Use $ui-style-creator to turn my visual direction into a reusable project style."
+policy:
+  allow_implicit_invocation: true

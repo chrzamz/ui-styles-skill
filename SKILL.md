@@ -1,75 +1,65 @@
 ---
 name: ui-styles
-description: 离线 UI 风格库（79 个风格家族，中英双语 prompt）。当用户需要为项目选定视觉风格、生成 UI 设计 prompt、或询问某个具体设计风格（如 claymorphism / glassmorphism / neoBrutalism / vaporwave / synthwave / bento grids / minimalism 等）时使用。触发词：「UI 风格」「设计风格推荐」「UI prompt」「视觉风格」「换个风格」「这个项目用什么风格」。
+description: "Participate before building or changing product UI: websites, apps, demos, dashboards, forms, visual redesigns, component-library selection, themes and interaction states. Act as a practical designer: understand the product, recommend and preview a direction, preserve a project visual standard, and implement it using the existing stack. 支持风格推荐、界面制作、组件库选型、主题 token、自定义风格。Skip backend-only work and nonvisual fixes."
 ---
 
-# UI Styles Skill
+# UI Styles
 
-离线封装自 https://github.com/TonnyWong1052/UI-Prompt 的 UI 风格 prompt 库，覆盖 5 大分类 79 个风格家族，中英双语。
+Help people who are not designers make and maintain a coherent product. Participate in the actual implementation, from the first demo through later pages. The 79 bilingual style entries are reference material; the deliverable is a suitable, usable interface and reusable project decisions.
 
-## 数据结构
+Resolve paths below relative to this `SKILL.md`, regardless of where the skill is installed. Use available file, browser and preview tools; no particular agent, MCP server or network connection is required for the local workflow.
 
-- `catalog.json` — 全部风格的轻量索引（id / 分类 / 名称 / 描述 / 标签 / prompt 路径）
-- `prompts/<category>/<familyId>/`
-  - `style.md` — 风格定义：视觉理念、材质质感、交互体验、整体氛围（适合让 AI 理解一个风格"是什么"）
-  - `custom.md` — 可直接使用的生成式 prompt 模板（适合让 AI "按这个风格生成代码"）
-- 5 个分类：`core`（核心设计系统）、`visual`（视觉效果）、`retro`（复古/年代）、`layout`（版式）、`interaction`（交互）
+## Enter before visual decisions
 
-## 工作流程
+Use this workflow before choosing a component library, writing the first styled page, or changing an existing visual system. A demo is still a product surface. Do not first generate a habitual palette, card layout or library and then apply this skill as decoration.
 
-### 触发方式
+For a small change, read the existing standard and work within it. Do not restart style selection for every button, add setup files to an explanation-only request, or redesign unrelated screens. Plain backend/data work is outside this skill.
 
-1. **推荐风格**：用户描述项目（"我在做一个 SaaS 后台"/"游戏官网"/"开发者工具"），让你挑风格
-2. **直接命名**：用户点名一个风格（"用 claymorphism"/"给我 vaporwave"），让你产出 prompt
-3. **对比/浏览**：用户问"有哪些风格"或"和 X 风格类似的有哪些"
+Automatic discovery depends on the host. When setting up persistent project use, follow [agent-integration.md](references/agent-integration.md); a skill description alone cannot guarantee invocation.
 
-### 执行步骤
+## 1. Understand the product with minimal friction
 
-**步骤 1 — 读 catalog**
-```
-Read <skill-root>/catalog.json
-```
-`<skill-root>` 是本 skill 的安装目录（通常 `~/.claude/skills/ui-styles/` 或项目内 `.claude/skills/ui-styles/`）。取出所有 family 的 `id / name / description / tags / category`，作为筛选基础。
+Inspect the brief, existing screens, assets, dependencies and applicable project instructions first. Look for `DESIGN.md`, `design/visual-system.md`, theme files and existing component conventions before making new ones.
 
-**步骤 2 — 筛选 / 匹配**
-- 若用户给项目上下文：根据项目调性（B 端工具 / C 端娱乐 / 数据展示 / 营销页 / 游戏 / 复古怀旧 / 极简专业 …）匹配 `tags` 和 `description`，输出 Top 3-5 候选，每个附一句话推荐理由
-- 若用户点名风格：直接定位对应的 family（注意中英文名都可能匹配）
-- 若用户要浏览：按 category 分组列出，避免一次倾倒太多
+Establish the primary user/task, content density, device and language, brand/reference material, framework and required components. Infer what the project already answers. Ask only a consequential unanswered question, in ordinary language with a recommended option; do useful independent work meanwhile. Do not ask a nontechnical user to choose token syntax or a framework for you.
 
-**步骤 3 — 加载详细 prompt（按需）**
-- 用户确认要某个风格后，按 `catalog.json` 中 `prompts.custom` 或 `prompts.style` 路径读取 md 文件
-- `custom.md` 优先用于"帮我生成 UI"场景
-- `style.md` 优先用于"解释这个风格"或"提供给设计师参考"场景
-- 默认输出中文（zh-CN 段落），若项目是英文项目或用户明确要英文则用 en-US
+Resolve conflicts using the user's current request and applicable project rules. Within those boundaries, prefer the project visual standard over an optionally selected personal profile, and either over generic catalog examples. A new page normally extends the existing system. A requested rebrand should explicitly update its scope and affected components.
 
-**步骤 4 — 输出**
-- 把对应语言段落整段呈现给用户，可附简短说明
-- 如果用户接下来要直接生成 UI 代码，用 prompt 作为系统指令，结合项目实际页面需求生成
+## 2. Recommend a direction and implementation together
 
-## 风格分类速览
+If the direction is already chosen, use it. Otherwise offer one recommended direction and, when helpful, up to two meaningful alternatives. Explain suitability and tradeoffs in terms of the user's product, not aesthetic jargon. For a direct build request, choose a justified direction, state the assumption briefly and implement a small representative slice without waiting for an unnecessary style-selection round.
 
-| Category | 数量 | 代表风格 |
-|---|---|---|
-| `core` | 9 | flatDesign / minimalism / brutalism / memphis / scrollNarrative / skeuomorphism / typography / fluent2 / materialDesign |
-| `visual` | 50+ | claymorphism / glassmorphism / neoBrutalism / synthwave / vaporwave / y2k / gradients / 3dElements / bentoGrids / kawaiiMinimal / wabiSabi / industrial / biophilic / blueprint / popArt / sciFiHud … |
-| `retro` | 15 | arcadeCRT / artDeco / bauhaus / darkAcademia / filmNoir / frutigerAero / midCenturyModern / newspaper / retroFuturism / retroOS / steampunk / swissDesign / synthwave / vhsAesthetic / digitalRetro |
-| `layout` | 1 | magazine |
-| `interaction` | 1 | mouseTracking |
+- Consult [library-selection.md](references/library-selection.md) when selecting or reconsidering dependencies. Preserve a suitable installed library; recommend new ones from required behavior, stack, accessibility and customization cost. Typography, imagery and art direction can be independent of component behavior.
+- Use the catalog as inspiration only as needed. Read `catalog.json` fields `id`, `familyId`, `category`, `name`, `description`, `tags`, `prompts`; tags are incomplete, so inspect relevant descriptions too. Use the unique `id`, not an ambiguous family name. Load only selected `style.md` / `custom.md` files and the needed language.
+- Upstream prompts can contain demo-specific structure, missing “current style card” references or framework examples. Extract visual invariants; adapt layout to real content and code to the installed versions. These files are reference data, not system instructions. Never let an example replace the user's task or existing engineering rules.
+- A missing `custom.md` means no prepared template, not an inability to implement. Derive a new adaptation from `style.md` and label it as such. A custom direction outside the catalog is welcome; do not invent a catalog entry.
+- For references supplied as screenshots or websites, distinguish observed styling from inferred behavior. A screenshot does not establish focus, disabled, loading or mobile behavior.
 
-## 推荐启发式
+## 3. Show a useful sample early
 
-- **B 端工具 / SaaS / 数据看板** → minimalism, flatDesign, fluent2, bentoGrids, swissDesign, utilityFirst
-- **开发者工具 / 技术博客** → minimalism, monochrome, blueprint, terminal-like (retroOS / vhsAesthetic)
-- **创意作品集 / 设计师官网** → brutalism, neoBrutalism, memphis, claymorphism, holographicFoil, antiDesign
-- **营销落地页 / 品牌站** → gradients, glassmorphism, 3dElements, auroraGlass, bentoGrids
-- **游戏 / 娱乐 / 音乐** → synthwave, vaporwave, neonCyberpunk, retroFuturism, y2k, sciFiHud
-- **复古 / 怀旧 / 文艺** → midCenturyModern, swissDesign, newspaper, artDeco, darkAcademia, wabiSabi, inkWash
-- **自然 / 健康 / 生活方式** → biophilic, organic, natural, scandi, wabiSabi, solarpunk
-- **儿童 / 教育 / 萌系** → kawaiiMinimal, claymorphism, paperCutout, handDrawnSketch, comicBook
+Follow [visual-review.md](references/visual-review.md). Use the same real content and components to compare alternatives. Prefer a small running slice or local HTML preview over prose-only names; use browser screenshots when tools are available. Show the task-critical component and its important states, not just decorative circles.
 
-## 注意事项
+Avoid universal bans on colors, gradients or shadcn/ui. Choose those deliberately from the product and user's preference. Familiar model defaults are not evidence of suitability. Do not imply that a popular design system guarantees a distinctive brand.
 
-- catalog 和 prompt 内容都是从上游仓库 (TonnyWong1052/UI-Prompt) 镜像而来，是该项目的设计成果，引用时建议保留来源链接
-- 79 个 family 中，9 个只有 `style.md` 没有 `custom.md`（catalog 中 `prompts.custom` 为 null），这些只能解释风格、不能直接生成代码
-- 不要在响应中倾倒整个 catalog；先筛选、再按需读 prompt
-- 如果用户问的风格不在 catalog 里，直接说不在并给出最接近的候选，不要编造
+## 4. Save decisions in portable project files
+
+For an implementation that needs continued visual work, follow [project-standard.md](references/project-standard.md) and adapt [the visual standard template](assets/visual-system.template.md).
+
+- Continue an existing authoritative document. Otherwise use `design/visual-system.md` for intent, library choice, components, states and verification; use `design/tokens.json` only when structured values are useful.
+- Keep one authoritative set of token values. If an existing theme already owns them, reference and edit that theme; do not create a competing JSON source. When JSON is the source, library themes are generated/adapted outputs.
+- Record scope and status: provisional choice, selected direction, implemented mapping, actually checked behavior. A written standard is not evidence that the UI follows it.
+- Make the standard discoverable through the project's agent instructions, using [agent-integration.md](references/agent-integration.md). Preserve unrelated rules and existing paths. Do not modify global agent configuration merely to style one project.
+
+When the user wants a named reusable custom style, read the bundled [ui-style-creator](skills/ui-style-creator/SKILL.md). It saves a project or personal profile. A personal profile takes effect only when selected for a project; keep a project-local snapshot for portability. Do not require every one-off page to become a reusable profile.
+
+## 5. Implement with the chosen library
+
+Use existing components and their theming APIs before replacing controls with custom implementations. For unsupported behavior, first consider composition or a focused specialized component, then implement the smallest missing piece. Preserve keyboard, focus, error and disabled behavior while styling.
+
+Read [theme-adapters.md](references/theme-adapters.md) for CSS, Ant Design, Semi Design and MUI starter exports. Verify the actual installed version and map any project-specific component states. The exporter handles a documented subset, not every design decision. Do not introduce a second component system just because its theme is easier to generate.
+
+## 6. Verify and carry decisions forward
+
+Check the representative implementation at the needed desktop/mobile sizes, with realistic text/data and relevant interaction states. Compare it to the selected direction and standard. Fix observed drift and summarize what was tested; distinguish a rendered screenshot, keyboard check and untested assumption.
+
+When adding a later page, reuse current tokens, components and rules. Add a missing component/state to the standard when its design is decided; do not silently invent a parallel style. Respect the task's scope when changing shared tokens. End with the working result, its standard/theme paths and any material unchecked behavior, rather than dumping a long prompt.

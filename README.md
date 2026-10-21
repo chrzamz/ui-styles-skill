@@ -2,149 +2,115 @@
 
 [简体中文](./README.md) | [English](./README.en.md)
 
-> Offline UI style library for Claude Code — **79 design styles × bilingual prompts (zh-CN / en-US)**, packaged as a [Claude Code Skill](https://docs.claude.com/en/docs/claude-code/skills).
+一个参与产品制作的设计师 Skill：理解项目、推荐视觉方向和组件库、做预览、保存项目视觉规范，并在后续页面与交互状态中保持一致。面向独立开发者，以及没有设计或开发背景、通过 Agent 制作产品的人。
+
+内置 **79 条中英双语风格记录**，支持自定义风格、项目视觉规范和组件库主题适配。风格资料离线可用；库的版本核验、在线参考和安装依赖按实际任务使用网络。
+
+> 原有终端演示展示的是早期“推荐风格 → 应用 prompt”流程；新增工作流及工具以本文和 SKILL.md 为准。
 >
-> 一个开箱即用的离线 UI 风格库 Skill，覆盖 79 个设计风格家族、中英双语 prompt，让 Claude 在生成前端 UI 时有"审美"。
+> ![原有推荐演示](./demo/demo-terminal.gif)
 
-<p align="center">
-  <img src="./demo/demo-terminal.gif" alt="ui-styles-skill demo — Claude reads catalog, recommends styles, applies Swiss Design to a project" width="880">
-</p>
+## 它如何参与制作
 
-<p align="center">
-  <img alt="styles" src="https://img.shields.io/badge/styles-79-blueviolet">
-  <img alt="languages" src="https://img.shields.io/badge/i18n-zh--CN%20%7C%20en--US-brightgreen">
-  <img alt="license" src="https://img.shields.io/badge/license-MIT-blue">
-  <img alt="claude code" src="https://img.shields.io/badge/Claude%20Code-Skill-orange">
-</p>
+你可以直接说：
 
----
+- “帮我做一个订单管理后台，适合业务员用，表格和表单比较多。”
+- “做一个动漫收藏网站，我不懂设计，你帮我推荐并做出效果。”
+- “给这个产品做个 demo，先沿用现有品牌和组件。”
+- “用现有 Semi Design 实现这套视觉，补齐加载、错误和禁用状态。”
+- “把我选定的风格存成个人配方，以后其他项目也能选用。”
+- “继续做设置页，保持和前面一致。”
 
-## ✨ 这是什么
+Skill 在第一个带样式的页面、demo 或组件库选择之前参与。它先读取已有项目，给出有理由的推荐；需要比较时展示少量候选。用户要求直接制作时先做代表性页面，避免反复问设计术语。
 
-`ui-styles-skill` 把上游开源项目 [TonnyWong1052/UI-Prompt](https://github.com/TonnyWong1052/UI-Prompt) 的 79 个 UI 风格 prompt 离线封装为一个 Claude Code Skill。装上之后，你可以这样和 Claude 对话：
+选库依据任务、技术栈、组件覆盖和定制成本。后台可比较 Ant Design、Semi、MUI、Arco 等；内容/营销页可以使用更轻的组件；动漫产品的艺术方向与基础交互库分别决定。保留合适的现有库，优先复用成熟能力。没有固定默认配色，也不默认安装 shadcn/ui 或禁止它。
 
-- 「我在做一个开发者工具站点，推荐 3 个合适的 UI 风格」
-- 「用 claymorphism 风格帮我生成一个登录页」
-- 「synthwave 和 vaporwave 有什么区别？」
-- 「换个更复古的风格试试」
+## 跨 Agent 的项目视觉标准
 
-Claude 会读取本地 catalog、筛选候选、按需加载对应风格的 prompt，最后用该风格的视觉规范生成代码 —— 全程零网络请求、零 token 消耗在浏览风格库上。
+默认成果可以是：
 
-## 📦 安装
+```text
+design/visual-system.md   # 受众、方向、组件库、布局、状态与验证记录
+design/tokens.json        # 需要结构化复用时才创建
+src/.../theme.*          # 按实际项目生成/适配的主题实现
+AGENTS.md                # 指向视觉标准的简短入口
+CLAUDE.md                # 需要时导入共享入口
+```
 
-### 全局安装（推荐）
+已有 `DESIGN.md` 或主题文件时继续使用，避免两套规范。Markdown 保存意图和行为，tokens/现有主题保存权威数值；后续页面读取同一份约定。规范包括适用的 hover、focus、disabled、loading、error、empty、selected 等状态，而不仅是主色和圆角。
 
-```bash
+这套文件可随项目被不同 Agent 读取，无需依赖 Claude Design。**自动发现不是强制执行**：skill 描述帮助首轮触发，项目规则负责后续持续介入，实际页面检查证明执行效果。宿主配置仍可能限制加载。
+
+详见 [项目规范](references/project-standard.md)、[跨 Agent 接入](references/agent-integration.md)、[预览与验收](references/visual-review.md)。
+
+## 安装
+
+保留原有 Claude Code 安装方式；Codex 使用当前官方文档列出的 `.agents/skills`。选择需要的宿主和范围，不要覆盖已有安装。
+
+```sh
+# Claude Code，用户级
 git clone https://github.com/chrzamz/ui-styles-skill.git ~/.claude/skills/ui-styles
+
+# Codex，用户级
+git clone https://github.com/chrzamz/ui-styles-skill.git ~/.agents/skills/ui-styles
 ```
 
-### 项目级安装
+项目级分别放在项目的 `.claude/skills/ui-styles` 或 `.agents/skills/ui-styles`。其他支持 Agent Skills 的工具按其发现路径安装。
 
-```bash
-git clone https://github.com/chrzamz/ui-styles-skill.git .claude/skills/ui-styles
+可以明确调用 Claude Code 的 `/ui-styles` 或 Codex 的 `$ui-styles`。自然语言也能触发，但是否自动调用由宿主和模型决定。希望从每个项目第一步都参与时，按[接入说明](references/agent-integration.md)设置条件式项目/用户规则；安装不会偷偷修改全局配置。
+
+已有视觉规范后，可让 Agent 使用项目接入工具。默认仅预览，加 `--write` 才写入：
+
+```sh
+python3 <skill-root>/scripts/link_project.py --project /path/to/product --design design/visual-system.md --claude
 ```
 
-安装后在任意 Claude Code 会话里输入：
+## 自定义风格：ui-style-creator
 
-```
-/ui-styles 推荐适合 SaaS 后台的风格
-```
+主 Skill 能直接读取内置的 [ui-style-creator](skills/ui-style-creator/SKILL.md)。它把用户想法、现有项目或参考图整理成可复用的风格配方。
 
-或直接用自然语言触发（Skill 描述里已声明触发词）：
+- **项目级**：`<project>/.ui-styles/profiles/<name>/`
+- **用户级**：`${XDG_CONFIG_HOME:-~/.config}/ui-styles/profiles/<name>/`
+- 内容包括视觉规范、元数据和可选 tokens；保存已确定的内容，不自动套默认色板。
+- 用户级配方只在被项目选用时生效；项目保留本地副本，更新配方不会悄悄修改旧项目。
 
-> 「我要给开发者工具选个 UI 风格」
+需要独立命令时，将整个 `skills/ui-style-creator/` 文件夹安装到宿主的技能目录。不要假定嵌套文件夹会自动注册第二个命令。
 
-## 🎨 风格目录概览
+## 组件库主题导出
 
-| Category | 数量 | 代表风格 |
-|---|---:|---|
-| `core` | 9 | flatDesign · minimalism · brutalism · memphis · skeuomorphism · materialDesign · fluent2 |
-| `visual` | 53 | claymorphism · glassmorphism · neoBrutalism · vaporwave · y2k · bentoGrids · auroraGlass · holographicFoil · sciFiHud · wabiSabi · biophilic · blueprint · popArt … |
-| `retro` | 15 | synthwave · arcadeCRT · artDeco · bauhaus · darkAcademia · filmNoir · midCenturyModern · newspaper · retroOS · steampunk · swissDesign · vhsAesthetic |
-| `layout` | 1 | magazine |
-| `interaction` | 1 | mouseTracking |
+附带 Python 3.9+ 标准库工具，支持 CSS、Ant Design、MUI、Semi 的**基础主题映射**。使用项目确认的值，先查实际库版本，再接入并验证。其他库由 Agent 按对应版本的官方 API 适配。
 
-> 共 **79 个 family**；其中 9 个仅提供 `style.md`（用于让模型理解风格），无可直接生成代码的 `custom.md`。
-
-## 🚀 使用示例
-
-### 1. 让 Claude 推荐风格
-
-> **You:** 我在做一个 AI 编程助手的官网，能不能推荐 3 个 UI 风格？
->
-> **Claude:** *(读取 catalog → 按 tags 匹配 dev-tool / minimal / tech 调性)*
-> 1. **Minimalism** — 极简留白，让产品本身成为视觉焦点
-> 2. **Blueprint** — 工程蓝图美学，技术感强、辨识度高
-> 3. **Bento Grids** — 苹果发布会同款，适合展示多个功能模块
-
-### 2. 让 Claude 按风格生成代码
-
-> **You:** 用 Claymorphism 风格给我做一个 Pricing 页面
->
-> **Claude:** *(读取 `prompts/visual/claymorphism/custom.md` → 注入到系统指令 → 输出符合风格规范的 HTML/CSS/React)*
-
-### 3. 浏览/对比
-
-> **You:** synthwave 和 vaporwave 有啥区别？
->
-> **Claude:** *(分别读取两个风格的 `style.md` 段落对比)*
-
-## 📂 项目结构
-
-```
-ui-styles-skill/
-├── SKILL.md              # Claude Code Skill 入口（含触发词、工作流程）
-├── catalog.json          # 全部 79 个风格的轻量索引（id / 分类 / tags / prompt 路径）
-└── prompts/
-    ├── core/
-    │   └── <familyId>/
-    │       ├── style.md  # 风格定义：视觉理念、材质、交互、氛围（"是什么"）
-    │       └── custom.md # 可直接喂给模型的生成式 prompt（"按这个生成代码"）
-    ├── visual/
-    ├── retro/
-    ├── layout/
-    └── interaction/
+```sh
+python3 <skill-root>/scripts/export_theme.py design/tokens.json --library antd --output src/theme.ts
 ```
 
-每个风格的 `style.md` / `custom.md` 都包含 **zh-CN** 和 **en-US** 两段；Claude 会根据项目语境自动选择。
+只创建新文件，不覆盖已有主题。Semi 输出语义 CSS 变量；其状态色阶等仍需补齐。Ant/MUI 的派生状态也需在真实组件中检查。导出成功不等于全状态或无障碍验收通过。参见 [格式、映射和限制](references/theme-adapters.md)。
 
-## 🧭 风格选择启发式
+## 仓库内容
 
-| 场景 | 推荐方向 |
+| 路径 | 用途 |
 |---|---|
-| B 端工具 / SaaS / 数据看板 | minimalism · flatDesign · fluent2 · bentoGrids · swissDesign |
-| 开发者工具 / 技术博客 | minimalism · monochrome · blueprint · retroOS · vhsAesthetic |
-| 创意作品集 / 设计师官网 | brutalism · neoBrutalism · memphis · claymorphism · holographicFoil · antiDesign |
-| 营销落地页 / 品牌站 | gradients · glassmorphism · 3dElements · auroraGlass · bentoGrids |
-| 游戏 / 娱乐 / 音乐 | synthwave · vaporwave · neonCyberpunk · retroFuturism · y2k · sciFiHud |
-| 复古 / 怀旧 / 文艺 | midCenturyModern · swissDesign · newspaper · artDeco · darkAcademia · wabiSabi |
-| 自然 / 健康 / 生活方式 | biophilic · organic · natural · scandi · wabiSabi · solarpunk |
-| 儿童 / 教育 / 萌系 | kawaiiMinimal · claymorphism · paperCutout · handDrawnSketch · comicBook |
+| `SKILL.md` | 主设计工作流与触发边界 |
+| `catalog.json`、`prompts/` | 79 条风格资料，70 份 custom prompt |
+| `references/` | 项目规范、Agent 接入、选库、适配与视觉检查 |
+| `assets/visual-system.template.md` | 项目视觉规范模板 |
+| `examples/` | token 示例，用于说明和测试，不是默认主题 |
+| `skills/ui-style-creator/` | 可独立使用的自定义风格技能 |
+| `scripts/` | 项目规则接入与基础主题导出 |
+| `tests/`、`evals/` | 工具行为测试与真实任务评估场景 |
 
-## 🤝 贡献
+资料存在重复/近似风格和不完整 tags，79 表示记录数；推荐时结合描述与实际内容。没有 custom 的风格仍可由 Agent 提炼后实现。演示页布局作为参考，实际页面结构由产品任务决定。
 
-欢迎以下几类 PR：
+## 开发与验证
 
-- **新增风格** — 提供 `style.md` + `custom.md`（双语），并在 `catalog.json` 注册
-- **润色现有 prompt** — 让风格描述更准确、更易被模型理解
-- **补充 9 个缺失的 `custom.md`** — 见 catalog 中 `prompts.custom = null` 的 family
-- **新增触发场景到 SKILL.md** — 让 Claude 更聪明地匹配
-- **i18n** — 当前是 zh-CN / en-US，欢迎补 ja / ko 等
+```sh
+python3 -B -m unittest discover -s tests -v
+```
 
-贡献前请先开 issue 对齐方向。提交时请保持 catalog.json 与目录结构同步。
+脚本测试验证文件边界和 token 映射；技能行为用 [评估场景](evals/scenarios.md)检查。[2026-10-21 验证记录](evals/results-2026-10-21.json)包含实际库集成与一次独立页面制作测试。真实宿主自动触发、其他库版本和用户视觉接受度仍需独立验证。
 
-## 📜 上游来源与致谢
+欢迎围绕真实使用失败改进工作流、状态覆盖、适配器和案例，帮助更多使用者完成产品的设计与制作。
 
-本项目的 79 个风格 prompt 全部来自上游开源项目 **[TonnyWong1052/UI-Prompt](https://github.com/TonnyWong1052/UI-Prompt)** —— 那里有完整的设计文档、在线浏览界面和持续更新的 prompt 源文件。本仓库的工作是：
+## 协议
 
-1. 将上游 prompt 整理为符合 Claude Code Skill 规范的目录结构
-2. 编写 catalog.json 索引，让模型可低成本筛选
-3. 撰写 SKILL.md 工作流程，约束模型的触发与输出行为
-
-详见 [ATTRIBUTION.md](./ATTRIBUTION.md)。如果你觉得这个项目有用，**请同时给上游仓库点 star**。
-
-## 📄 License
-
-[MIT](./LICENSE) © 2026 chrzamz
-
-上游 prompt 内容版权归原作者所有，遵循上游项目协议。
+[MIT](./LICENSE) © 2026 chrzamz。第三方资料的来源与权利说明见 [ATTRIBUTION.md](./ATTRIBUTION.md)。

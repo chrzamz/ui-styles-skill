@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "name": "industrial-reference-example",
+  "modes": {
+    "light": {
+      "background": "#FFFFFF",
+      "surface": "#F3F5F7",
+      "text": "#17212B",
+      "mutedText": "#526171",
+      "border": "#BCC6D0",
+      "primary": "#245580",
+      "onPrimary": "#FFFFFF",
+      "success": "#176544",
+      "warning": "#885100",
+      "danger": "#B42318",
+      "focus": "#245580"
+    }
+  },
+  "typography": {
+    "fontFamily": "Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif",
+    "fontSize": 16,
+    "lineHeight": 1.5
+  },
+  "shape": { "borderRadius": 4 },
+  "spacing": { "unit": 4 },
+  "control": { "height": 40 },
+  "motion": { "duration": 160, "reducedMotion": true }
+}

@@ -2,147 +2,115 @@
 
 [简体中文](./README.md) | [English](./README.en.md)
 
-> An offline, ready-to-use UI style library for Claude Code, covering **79 design style families with bilingual prompts (zh-CN / en-US)**. It gives Claude a stronger visual vocabulary when generating frontend UI.
+A designer skill that participates in product development: understand the project, recommend visual directions and component libraries, build previews, save a project visual standard, and keep later pages and interaction states consistent. Built for independent makers and people who use agents without a design or development background.
 
-<p align="center">
-  <img src="./demo/demo-terminal.gif" alt="ui-styles-skill demo — Claude reads catalog, recommends styles, applies Swiss Design to a project" width="880">
-</p>
+Includes **79 bilingual style records**, custom-style creation, project visual standards and component-library theme adapters. The reference library works offline; current library documentation, online references and dependency installation use the network when needed.
 
-<p align="center">
-  <img alt="styles" src="https://img.shields.io/badge/styles-79-blueviolet">
-  <img alt="languages" src="https://img.shields.io/badge/i18n-zh--CN%20%7C%20en--US-brightgreen">
-  <img alt="license" src="https://img.shields.io/badge/license-MIT-blue">
-  <img alt="claude code" src="https://img.shields.io/badge/Claude%20Code-Skill-orange">
-</p>
+> The existing terminal demo shows the earlier recommendation/prompt workflow. See the current SKILL.md for the expanded workflow.
+>
+> ![Original recommendation demo](./demo/demo-terminal.gif)
 
----
+## How it participates
 
-## ✨ What is this?
+Ask naturally:
 
-`ui-styles-skill` packages 79 UI style prompts from the upstream open-source project [TonnyWong1052/UI-Prompt](https://github.com/TonnyWong1052/UI-Prompt) as an offline Claude Code Skill. Once installed, you can ask Claude:
+- “Build an order-management dashboard for operations staff, with dense tables and forms.”
+- “Make an anime collection site. I don't know design; recommend a direction and show it.”
+- “Create a product demo using our existing brand and components.”
+- “Apply this direction using our Semi Design setup, including loading, error and disabled states.”
+- “Save this selected style as a personal recipe for future projects.”
+- “Continue with the settings page and keep it consistent.”
 
-- "I'm building a developer tool website. Recommend three suitable UI styles."
-- "Create a login page in the claymorphism style."
-- "What's the difference between synthwave and vaporwave?"
-- "Try a more retro style."
+The skill enters before the first styled page, demo or UI-library decision. It inspects the project and explains a recommendation. When comparison helps, it shows a few alternatives. For a direct build request, it starts with a representative slice instead of blocking on a design questionnaire.
 
-Claude reads the local catalog, selects suitable candidates, loads the relevant prompt on demand, and generates code according to that style's visual guidelines. The entire workflow runs locally without network requests or browsing an external style library.
+Library choices follow the actual tasks, framework, component coverage and customization cost. Data-heavy apps may compare Ant Design, Semi, MUI or Arco. Content sites may need lighter primitives. Anime art direction is separate from the behavior library. Suitable existing components take priority. There is no mandatory palette, default shadcn/ui installation, or blanket ban on it.
 
-## 📦 Installation
+## A project visual standard across agents
 
-### Global installation (recommended)
+A new project can retain:
 
-```bash
+```text
+design/visual-system.md   # audience, direction, libraries, layout, states and evidence
+design/tokens.json        # only when structured reuse helps
+src/.../theme.*          # the implementation for the project's actual stack
+AGENTS.md                # a short pointer to the visual standard
+CLAUDE.md                # import the shared entrypoint when needed
+```
+
+Continue an existing authoritative `DESIGN.md` or theme instead of creating competing sources. Markdown captures intent and behavior; tokens or an existing theme own values. Cover applicable hover, focus, disabled, loading, error, empty and selected states, not just primary color and radius.
+
+These files travel with the project and do not require Claude Design. **Automatic discovery is not enforcement**: metadata helps first-use activation, project rules guide later sessions, and real interface checks verify the result. Host configuration may still restrict loading.
+
+See [project standards](references/project-standard.md), [agent integration](references/agent-integration.md) and [visual review](references/visual-review.md).
+
+## Installation
+
+Choose the host and scope you need. Preserve existing installations.
+
+```sh
+# Claude Code, user scope
 git clone https://github.com/chrzamz/ui-styles-skill.git ~/.claude/skills/ui-styles
+
+# Codex, user scope, following current documented discovery paths
+git clone https://github.com/chrzamz/ui-styles-skill.git ~/.agents/skills/ui-styles
 ```
 
-### Project-level installation
+For project scope, use `.claude/skills/ui-styles` or `.agents/skills/ui-styles` inside the product repository. Other Agent Skills hosts use their own documented discovery paths.
 
-```bash
-git clone https://github.com/chrzamz/ui-styles-skill.git .claude/skills/ui-styles
+Invoke `/ui-styles` in Claude Code or `$ui-styles` in Codex. Natural-language activation depends on the host/model. For early participation in every project, follow the conditional project/user-rule instructions in [agent integration](references/agent-integration.md). Installation does not silently change global configuration.
+
+After a visual standard exists, the agent can link it into project instructions. This previews changes; add `--write` to apply:
+
+```sh
+python3 <skill-root>/scripts/link_project.py --project /path/to/product --design design/visual-system.md --claude
 ```
 
-After installation, enter the following in any Claude Code session:
+## Custom styles: ui-style-creator
 
-```text
-/ui-styles Recommend styles for a SaaS dashboard
+The main skill can directly read the bundled [ui-style-creator](skills/ui-style-creator/SKILL.md). It turns ideas, references or an existing project into a reusable style profile.
+
+- Project scope: `<project>/.ui-styles/profiles/<name>/`.
+- User scope: `${XDG_CONFIG_HOME:-~/.config}/ui-styles/profiles/<name>/`.
+- Profiles hold a design document, metadata and optional tokens, without an invented default palette.
+- Personal profiles apply only when a project selects them. Keep a project-local snapshot; changing a personal profile does not silently restyle previous projects.
+
+To expose a separate command, install the complete `skills/ui-style-creator/` folder in the host's skill directory. A nested skill folder is not assumed to register independently.
+
+## Theme exports
+
+A Python 3.9+ standard-library helper provides **base theme mappings** for CSS, Ant Design, MUI and Semi. Use selected project values, check the installed library version, integrate the output and verify real components. Other libraries require their documented version-specific adapters.
+
+```sh
+python3 <skill-root>/scripts/export_theme.py design/tokens.json --library antd --output src/theme.ts
 ```
 
-You can also trigger the Skill using natural language because its description includes relevant trigger phrases:
+The helper creates new files only. Semi uses semantic CSS variables and still needs state palette work. Ant/MUI derived states also require inspection. Successful export is not complete state coverage or accessibility acceptance. See [format, mappings and limits](references/theme-adapters.md).
 
-> "I need a UI style for a developer tool."
+## Repository
 
-## 🎨 Style catalog overview
-
-| Category | Count | Representative styles |
-|---|---:|---|
-| `core` | 9 | flatDesign · minimalism · brutalism · memphis · skeuomorphism · materialDesign · fluent2 |
-| `visual` | 53 | claymorphism · glassmorphism · neoBrutalism · vaporwave · y2k · bentoGrids · auroraGlass · holographicFoil · sciFiHud · wabiSabi · biophilic · blueprint · popArt … |
-| `retro` | 15 | synthwave · arcadeCRT · artDeco · bauhaus · darkAcademia · filmNoir · midCenturyModern · newspaper · retroOS · steampunk · swissDesign · vhsAesthetic |
-| `layout` | 1 | magazine |
-| `interaction` | 1 | mouseTracking |
-
-> The catalog contains **79 families**. Nine provide only `style.md` for helping the model understand the style and do not include a `custom.md` prompt for direct code generation.
-
-## 🚀 Usage examples
-
-### 1. Ask Claude to recommend styles
-
-> **You:** I'm building a website for an AI coding assistant. Can you recommend three UI styles?
->
-> **Claude:** *(reads the catalog and matches tags related to developer tools, minimalism, and technology)*
-> 1. **Minimalism** — Generous whitespace keeps the product itself in focus
-> 2. **Blueprint** — An engineering-drawing aesthetic with a distinctive technical character
-> 3. **Bento Grids** — A modular layout well suited to presenting multiple product features
-
-### 2. Ask Claude to generate code in a style
-
-> **You:** Create a pricing page in the Claymorphism style.
->
-> **Claude:** *(reads `prompts/visual/claymorphism/custom.md`, applies its instructions, and outputs HTML, CSS, or React code that follows the style guidelines)*
-
-### 3. Browse or compare styles
-
-> **You:** What's the difference between synthwave and vaporwave?
->
-> **Claude:** *(reads and compares the `style.md` sections for both styles)*
-
-## 📂 Project structure
-
-```text
-ui-styles-skill/
-├── SKILL.md              # Claude Code Skill entry point and workflow
-├── catalog.json          # Index of all 79 styles: ID, category, tags, and prompt paths
-└── prompts/
-    ├── core/
-    │   └── <familyId>/
-    │       ├── style.md  # Style definition: visual principles, materials, interaction, and mood
-    │       └── custom.md # Generative prompt for producing code in the selected style
-    ├── visual/
-    ├── retro/
-    ├── layout/
-    └── interaction/
-```
-
-Each `style.md` and `custom.md` file contains **zh-CN** and **en-US** sections. Claude selects the appropriate language based on the project context.
-
-## 🧭 Style selection guide
-
-| Use case | Recommended directions |
+| Path | Purpose |
 |---|---|
-| B2B tools / SaaS / dashboards | minimalism · flatDesign · fluent2 · bentoGrids · swissDesign |
-| Developer tools / technical blogs | minimalism · monochrome · blueprint · retroOS · vhsAesthetic |
-| Creative portfolios / designer websites | brutalism · neoBrutalism · memphis · claymorphism · holographicFoil · antiDesign |
-| Marketing landing pages / brand websites | gradients · glassmorphism · 3dElements · auroraGlass · bentoGrids |
-| Games / entertainment / music | synthwave · vaporwave · neonCyberpunk · retroFuturism · y2k · sciFiHud |
-| Retro / nostalgic / editorial | midCenturyModern · swissDesign · newspaper · artDeco · darkAcademia · wabiSabi |
-| Nature / wellness / lifestyle | biophilic · organic · natural · scandi · wabiSabi · solarpunk |
-| Children / education / cute themes | kawaiiMinimal · claymorphism · paperCutout · handDrawnSketch · comicBook |
+| `SKILL.md` | Main design workflow and activation boundaries |
+| `catalog.json`, `prompts/` | 79 style records and 70 custom prompts |
+| `references/` | Project standards, integration, library selection, adapters and review |
+| `assets/visual-system.template.md` | Portable visual-standard template |
+| `examples/` | Token example for explanation/testing, not a default theme |
+| `skills/ui-style-creator/` | Self-contained custom-style skill |
+| `scripts/` | Project instruction linking and theme export |
+| `tests/`, `evals/` | Tool tests and realistic skill scenarios |
 
-## 🤝 Contributing
+The catalog has related/duplicate styles and incomplete tags; 79 is a record count. Inspect descriptions and content. Missing custom prompts do not prevent a new adaptation. Demo layouts provide references; actual page structure follows the product's tasks.
 
-Contributions are welcome in the following areas:
+## Development and validation
 
-- **Add a style** — Provide bilingual `style.md` and `custom.md` files and register the style in `catalog.json`
-- **Improve an existing prompt** — Make its style description more accurate and easier for the model to follow
-- **Add the nine missing `custom.md` files** — See families whose `prompts.custom` value is `null` in the catalog
-- **Add trigger scenarios to `SKILL.md`** — Help Claude match requests to styles more effectively
-- **Internationalization** — The project currently supports zh-CN and en-US; Japanese, Korean, and other translations are welcome
+```sh
+python3 -B -m unittest discover -s tests -v
+```
 
-Please open an issue to align on direction before submitting a pull request. Keep `catalog.json` synchronized with the prompt directory structure in every contribution.
+Script tests check file boundaries and token mappings. Use [evaluation scenarios](evals/scenarios.md) for skill behavior. The [2026-10-21 validation record](evals/results-2026-10-21.json) covers real-library integration and one independent page-building task. Host activation, other library versions and user visual acceptance still require separate verification.
 
-## 📜 Upstream source and acknowledgements
+Contributions should address real usage failures, state coverage, adapters and examples, helping more people design and build their products.
 
-All 79 style prompts in this project come from the upstream open-source project **[TonnyWong1052/UI-Prompt](https://github.com/TonnyWong1052/UI-Prompt)**, which provides the complete design documentation, an online browsing interface, and continuously updated prompt source files. This repository:
+## License
 
-1. Organizes the upstream prompts into a directory structure compatible with Claude Code Skills
-2. Provides the `catalog.json` index for lower-cost style selection
-3. Defines the triggering and output workflow in `SKILL.md`
-
-See [ATTRIBUTION.md](./ATTRIBUTION.md) for details. If this project is useful to you, please also star the upstream repository.
-
-## 📄 License
-
-[MIT](./LICENSE) © 2026 chrzamz
-
-The upstream prompt content remains copyrighted by its original author and is distributed according to the upstream project's terms.
+[MIT](./LICENSE) © 2026 chrzamz. See [ATTRIBUTION.md](./ATTRIBUTION.md) for third-party material provenance and rights notices.

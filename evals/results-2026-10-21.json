@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-21",
+  "scope": "Local skill upgrade validation; not a cross-host activation benchmark.",
+  "scriptTests": {
+    "count": 34,
+    "result": "passed",
+    "realLibraryRegressionEnabled": true,
+    "command": "UI_STYLES_THEME_CHECK_NODE_MODULES=/absolute/temp/node_modules python3 -B -m unittest discover -s tests -v"
+  },
+  "skillValidation": {
+    "entrypoints": [
+      "SKILL.md",
+      "skills/ui-style-creator/SKILL.md"
+    ],
+    "result": "passed"
+  },
+  "integration": {
+    "versions": {
+      "antd": "6.6.7",
+      "mui": "9.5.0",
+      "semi": "2.104.0",
+      "react": "19.3.1",
+      "typescript": "7.0.2"
+    },
+    "typecheck": "strict; skipLibCheck true",
+    "runtime": "theme values, reduced motion, light/dark modes and provider SSR passed",
+    "semi": "11 emitted variable definitions found in installed CSS",
+    "browserVisualAcceptance": false
+  },
+  "forwardTest": {
+    "invocation": "explicit independent agent",
+    "brief": "Build a local anime collection demo with a light paper texture and strong titles, filtering, details, loading and empty states; preserve a project standard for another agent.",
+    "result": "implemented without a framework; saved project visual standard, explicit tokens, generated CSS, project profile and agent-entrypoint links",
+    "checks": [
+      {
+        "name": "initial six cards",
+        "passed": true
+      },
+      {
+        "name": "status filter",
+        "passed": true
+      },
+      {
+        "name": "selected state",
+        "passed": true
+      },
+      {
+        "name": "empty state",
+        "passed": true
+      },
+      {
+        "name": "reset six cards",
+        "passed": true
+      },
+      {
+        "name": "search one card",
+        "passed": true
+      },
+      {
+        "name": "dialog opens",
+        "passed": true
+      },
+      {
+        "name": "dialog title",
+        "passed": true
+      },
+      {
+        "name": "Escape closes dialog",
+        "passed": true
+      },
+      {
+        "name": "focus restored",
+        "passed": true
+      },
+      {
+        "name": "loading visible",
+        "passed": true
+      },
+      {
+        "name": "loading disabled",
+        "passed": true
+      },
+      {
+        "name": "loading aria-busy",
+        "passed": true
+      },
+      {
+        "name": "loading resolves",
+        "passed": true
+      },
+      {
+        "name": "mobile no horizontal overflow",
+        "passed": true
+      },
+      {
+        "name": "mobile single column",
+        "passed": true
+      },
+      {
+        "name": "mobile dialog fits",
+        "passed": true
+      },
+      {
+        "name": "reduced motion",
+        "passed": true
+      }
+    ]
+  },
+  "limits": [
+    "Implicit selection and cross-host continuation were not benchmarked.",
+    "One successful forward task does not establish general design quality or user acceptance.",
+    "Ant/MUI provider rendering is SSR, not browser visual acceptance.",
+    "Semi is a partial base-theme adapter; complete component state mapping remains project-specific.",
+    "Direct file:// browser opening was blocked by the browser tool; the demo was verified via localhost."
+  ],
+  "reviewFixes": [
+    "Ignore imports inside Markdown code examples.",
+    "Reject unknown token structure consistently before profile save.",
+    "List incomplete profiles as invalid.",
+    "Preserve explicit Ant semantic colors after dark derivation.",
+    "Zero all Ant motion durations for reduced-motion preference."
+  ]
+}
