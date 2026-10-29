@@ -2,7 +2,7 @@
 
 [简体中文](./README.md) | [English](./README.en.md)
 
-A designer skill that participates in product development: understand the project, recommend visual directions and component libraries, build previews, save a project visual standard, and keep later pages and interaction states consistent. Built for independent makers and people who use agents without a design or development background.
+A design skill for product interfaces, websites, slides and forms: infer visual direction from the requirements and project, make a representative preview, and keep subsequent work consistent. Built for independent makers and people who use agents without a design or development background.
 
 Includes **79 bilingual style records**, custom-style creation, project visual standards and component-library theme adapters. The reference library works offline; current library documentation, online references and dependency installation use the network when needed.
 
@@ -23,6 +23,8 @@ Ask naturally:
 
 The skill enters before the first styled page, demo or UI-library decision. It inspects the project and explains a recommendation. When comparison helps, it shows a few alternatives. For a direct build request, it starts with a representative slice instead of blocking on a design questionnaire.
 
+Users need not know the skill name or mention design. During requirements exploration, stay with that discussion. After requirements are accepted but creation is not requested, briefly offer a design next step and wait for the choice. For an authorized build, integrate design directly without another approval gate. Derive layout, density, typography and color roles from tasks and existing functions rather than industry stereotypes. Use the relevant presentation, document or PDF skill for artifact production and validation.
+
 Library choices follow the actual tasks, framework, component coverage and customization cost. Data-heavy apps may compare Ant Design, Semi, MUI or Arco. Content sites may need lighter primitives. Anime art direction is separate from the behavior library. Suitable existing components take priority. There is no mandatory palette, default shadcn/ui installation, or blanket ban on it.
 
 ## A project visual standard across agents
@@ -40,6 +42,8 @@ CLAUDE.md                # import the shared entrypoint when needed
 Continue an existing authoritative `DESIGN.md` or theme instead of creating competing sources. Markdown captures intent and behavior; tokens or an existing theme own values. Cover applicable hover, focus, disabled, loading, error, empty and selected states, not just primary color and radius.
 
 These files travel with the project and do not require Claude Design. **Automatic discovery is not enforcement**: metadata helps first-use activation, project rules guide later sessions, and real interface checks verify the result. Host configuration may still restrict loading.
+
+See the [2026-10-29 validation record](evals/results-2026-10-29.json) for native natural-language routing and profile-upgrade checks. Sample results do not guarantee every activation; discovery is evaluated separately from design quality.
 
 See [project standards](references/project-standard.md), [agent integration](references/agent-integration.md) and [visual review](references/visual-review.md).
 
@@ -68,6 +72,8 @@ python3 <skill-root>/scripts/link_project.py --project /path/to/product --design
 ## Custom styles: ui-style-creator
 
 The main skill can directly read the bundled [ui-style-creator](skills/ui-style-creator/SKILL.md). It turns ideas, references or an existing project into a reusable style profile.
+
+Once a user accepts a representative custom result or clearly wants to reuse personal/company brand rules, offer once to save it when useful. Do not interrupt every edit. Save a reusable recipe only when requested; do not reconfirm an existing request. Later revisions can upgrade the selected profile with a version and change note, without silently changing other projects. Company sharing uses the agreed project/repository, not an assumed organization-wide service.
 
 - Project scope: `<project>/.ui-styles/profiles/<name>/`.
 - User scope: `${XDG_CONFIG_HOME:-~/.config}/ui-styles/profiles/<name>/`.

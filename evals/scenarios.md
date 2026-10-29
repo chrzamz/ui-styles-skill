@@ -16,3 +16,13 @@ Run in an isolated temporary project with only the brief, appropriate raw files 
 Separate explicit skill tests from implicit routing tests. A test that tells the agent to read SKILL.md cannot prove automatic discovery. When measuring routing, expose only the normal metadata and include a negative control. Check fresh sessions in each supported host; agent instructions are guidance, not an enforced hook.
 
 For theme exporters, separately compile/integrate the emitted output against the actual library version and render representative states. Passing Python tests proves neither browser behavior nor support for all library versions. Record the date, host, fixture, observed artifacts and unchecked limits for any published result.
+
+## Requirements-to-design and reusable style cases
+
+Use [trigger-cases.json](trigger-cases.json) for natural-language routing. It includes product creation, existing-page work, mobile forms, accepted requirements, PPT planning and custom brand direction, plus early discovery, copy-only changes, backend/UI logic fixes, color-data conversion and field-definition negatives. Evaluate the actual stage: naming a future visual product alone is not enough to start design.
+
+For native Codex checks, start a fresh ephemeral session for each prompt, retain the ordinary installed skill catalog, and provide no instruction to select this skill. Use isolated local fixtures with no design-routing rule in AGENTS.md. Disable memory and delegation consistently when comparing versions so past tasks and child runs cannot supply the missing route. Record host/model/effort, skill hashes, prompts, fixture, CLI flags, and raw tool events. A successful read of the relevant SKILL.md before the first visual edit is routing evidence; a skill-name announcement alone is not. Mark timeouts inconclusive, not as negative controls passing.
+
+A routing run may stop after a successful skill read; explicitly label it as activation-only rather than a completed design. Let stage-transition and custom-style cases finish to inspect their advice. Check that an accepted requirements list produces a concise optional next step, while a direct build does not add another approval gate. Inspect representative outputs and actual file changes separately before claiming design quality.
+
+Profile lifecycle checks use only temporary project profiles: an accepted custom direction may prompt once to save; an explicit save/update proceeds without repeating that question; upgrades change the requested profile version and decision note, not unrelated profiles or projects. A company label does not imply a new global storage service.

@@ -1,6 +1,6 @@
 interface:
   display_name: "UI Styles Designer"
-  short_description: "Design product UI, choose libraries, and preserve project style"
-  default_prompt: "Use $ui-styles to understand this product, recommend a visual direction and suitable components, then implement a representative interface with a reusable project standard."
+  short_description: "Choose fitting designs for products, slides and forms"
+  default_prompt: "Use $ui-styles to infer a fitting visual direction from the requirements and existing project. For requested creation, produce a representative sample in the requested format. If requirements are accepted but creation is not requested, briefly offer the design next step; otherwise stay with requirements clarification. Preserve the chosen style and offer reusable custom profiles when useful."
 policy:
   allow_implicit_invocation: true

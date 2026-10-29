@@ -1,0 +1,199 @@
+{
+  "date": "2026-10-29",
+  "scope": "Native Codex implicit discovery plus requirements-transition and profile-lifecycle checks, not a design-quality benchmark.",
+  "environment": {
+    "date": "2026-10-29",
+    "host": "Codex CLI 0.163.0",
+    "model": "gpt-6-astra",
+    "reasoning_effort": "ultra",
+    "memory": false,
+    "multi_agent": false,
+    "sandbox": "workspace-write",
+    "global_routing_rule_added": false,
+    "candidate_sha256": "9d8734c3df9832163aec3c27634438d519b274e35e689bdbcff0a3fe3105501d",
+    "baseline_sha256": "077593eaabc289266e5bdd6cb884f004e1a721ef10101e9783e77c30f6d7b74b",
+    "normal_installed_catalog": true,
+    "prompt_names_skill": false,
+    "final_skill_sha256": "cfebe28bdb3a22ac5db432884898a63811eae23e8db8610657b1010642864863",
+    "early_stop_policy": "Three implementation requests stopped after a successful skill read; no completed UI or visual quality claim.",
+    "timeout_policy": "210 seconds initially; one field-definition timeout retried once with 300 seconds.",
+    "final_body_note": "After the behavior runs, saving-offer wording was narrowed to representative-result acceptance or explicit reuse intent. The tested description is unchanged."
+  },
+  "coreRouting": {
+    "total": 12,
+    "positive": 6,
+    "negative": 6,
+    "passed": 12,
+    "inconclusive": 0
+  },
+  "profileUpgrade": {
+    "version": 3,
+    "changed_files": [
+      ".ui-styles/profiles/advisory/DESIGN.md",
+      ".ui-styles/profiles/advisory/profile.json"
+    ],
+    "current_project_unchanged": true,
+    "other_profile_unchanged": true,
+    "completed": true
+  },
+  "observations": [
+    "Requests did not name skills or tell the model to read instructions. Normal installed skill catalog was available; no new global routing rule was added.",
+    "Requirements and PPT advice used the actual fixture audience/format/brand, and did not produce files.",
+    "Two text-only custom-brand runs loaded the skill but omitted the optional save reminder. Activation and lifecycle behavior are graded separately.",
+    "One form-fields negative timed out initially and completed on retry; the timeout was not counted as a pass.",
+    "Independent review verified profile v2 -> v3, retained brand rules, and changes limited to the selected profile.",
+    "Accepted-preview case explicitly recommended saving a reusable company style, without writing any files. Text-only design advice did not prompt saving; final wording limits the offer to reviewed results or clear reuse intent."
+  ],
+  "limits": [
+    "One main run per request with targeted reruns; these sample results do not guarantee future activation.",
+    "Only Codex CLI 0.163.0 with configured gpt-6-astra/ultra was exercised; desktop and other hosts were not benchmarked.",
+    "Three implementation requests stopped after activation, so visual quality and completed artifact rendering are not evaluated.",
+    "Earlier baseline samples used a different planning fixture and some used memory; they are exploratory evidence, not a controlled causal estimate of description improvement.",
+    "Local skill-use disclosure may still be required by host instructions, even though no manual skill activation or design questionnaire is needed."
+  ],
+  "runs": [
+    {
+      "id": "web_business",
+      "variant": "candidate",
+      "expected": true,
+      "read_skill": true,
+      "route_pass": true,
+      "read_before_file_change": true,
+      "stop_reason": "observed_skill_read",
+      "seconds": 17.21,
+      "prompt": "给仓库管理员做一个本地库存查询页面，能按品名筛选，库存不足的要看得出来。用当前目录的数据，先做一个能点能筛选的页面。"
+    },
+    {
+      "id": "existing_page",
+      "variant": "candidate",
+      "expected": true,
+      "read_skill": true,
+      "route_pass": true,
+      "read_before_file_change": true,
+      "stop_reason": "observed_skill_read",
+      "seconds": 18.63,
+      "prompt": "给这个现有项目增加一个设置页，放通知开关和每页显示条数，和现在的页面保持一致。只在当前目录改。"
+    },
+    {
+      "id": "requirements_ready",
+      "variant": "candidate_v2",
+      "expected": true,
+      "read_skill": true,
+      "route_pass": true,
+      "read_before_file_change": true,
+      "stop_reason": "turn.completed",
+      "seconds": 121.96,
+      "prompt": "返修登记的需求就按 README 里的范围确定：登记、查询、处理进度，三种角色也都确认了。还没开始做界面，现在下一步怎么安排？先说建议，不用创建文件。"
+    },
+    {
+      "id": "ppt_ready",
+      "variant": "candidate_v2",
+      "expected": true,
+      "read_skill": true,
+      "route_pass": true,
+      "read_before_file_change": true,
+      "stop_reason": "turn.completed",
+      "seconds": 160.13,
+      "prompt": "这份给经销商看的新品发布 PPT，内容已经确认：产品定位、三个卖点、两组对比数据、合作方式，共八页。品牌要求在 README 里。下一步怎么做？先给建议，不用生成文件。"
+    },
+    {
+      "id": "form_mobile",
+      "variant": "candidate",
+      "expected": true,
+      "read_skill": true,
+      "route_pass": true,
+      "read_before_file_change": true,
+      "stop_reason": "observed_skill_read",
+      "seconds": 16.31,
+      "prompt": "帮我做一张手机上能填写的设备报修表，姓名、设备编号、故障描述、紧急程度和提交按钮，工人戴手套也要容易点，先在本地用假数据演示。"
+    },
+    {
+      "id": "custom_brand",
+      "variant": "candidate_v2",
+      "expected": true,
+      "read_skill": true,
+      "route_pass": true,
+      "read_before_file_change": true,
+      "stop_reason": "turn.completed",
+      "seconds": 114.49,
+      "prompt": "我们咨询公司的页面方向就定为暖白底、深棕正文、大标题和细线分区，不用卡片。已有项目主要是服务介绍和预约咨询。先用文字整理这套方案如何应用到这些功能，不创建文件。这个方向我已经认可。"
+    },
+    {
+      "id": "early_requirements",
+      "variant": "candidate",
+      "expected": false,
+      "read_skill": false,
+      "route_pass": true,
+      "read_before_file_change": null,
+      "stop_reason": "turn.completed",
+      "seconds": 50.03,
+      "prompt": "我想做一个给小店老板用的产品，可能管库存，也可能管客户回访，还没想清楚。现在只讨论最先解决哪个问题，不讨论界面或制作。"
+    },
+    {
+      "id": "ppt_copy",
+      "variant": "candidate",
+      "expected": false,
+      "read_skill": false,
+      "route_pass": true,
+      "read_before_file_change": null,
+      "stop_reason": "turn.completed",
+      "seconds": 14.52,
+      "prompt": "只把这句 PPT 文案改得简洁一点：“我们的解决方案能够全面赋能企业的全流程数字化转型升级。”不要讨论排版或配色。"
+    },
+    {
+      "id": "backend_fix",
+      "variant": "candidate",
+      "expected": false,
+      "read_skill": false,
+      "route_pass": true,
+      "read_before_file_change": null,
+      "stop_reason": "turn.completed",
+      "seconds": 70.66,
+      "prompt": "api.py 的 stock_delta 算错了，出库数量应该从当前库存中扣除。只修计算，不要改页面。"
+    },
+    {
+      "id": "ui_logic_fix",
+      "variant": "candidate",
+      "expected": false,
+      "read_skill": false,
+      "route_pass": true,
+      "read_before_file_change": null,
+      "stop_reason": "turn.completed",
+      "seconds": 58.19,
+      "prompt": "app.js 的库存筛选有个 bug：关键词前后有空格就搜不到。只在过滤前去掉首尾空格，不改变页面结构和任何样式。"
+    },
+    {
+      "id": "color_data",
+      "variant": "candidate",
+      "expected": false,
+      "read_skill": false,
+      "route_pass": true,
+      "read_before_file_change": null,
+      "stop_reason": "turn.completed",
+      "seconds": 81.0,
+      "prompt": "把 colors.csv 的十六进制颜色转成 R、G、B 三列，保留原来的名称列，输出 converted.csv。只做数据转换。"
+    },
+    {
+      "id": "form_fields",
+      "variant": "retry",
+      "expected": false,
+      "read_skill": false,
+      "route_pass": true,
+      "read_before_file_change": null,
+      "stop_reason": "turn.completed",
+      "seconds": 105.33,
+      "prompt": "现在先确定设备报修登记需要哪些字段、哪些必填，以及设备编号怎么校验。只给字段清单和规则，不做表单页面或排版。"
+    },
+    {
+      "id": "accepted_preview",
+      "variant": "lifecycle",
+      "expected": true,
+      "read_skill": true,
+      "route_pass": true,
+      "read_before_file_change": true,
+      "stop_reason": "turn.completed",
+      "seconds": 136.62,
+      "prompt": "我看过当前这版页面效果了，暖白底、深棕字、大标题和细线分区，很符合我们咨询公司的定位。这个定制方向已经确认，后面其它项目也希望延续这种感觉。先别改文件，你看接下来怎么处理合适？"
+    }
+  ]
+}

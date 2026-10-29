@@ -1,0 +1,84 @@
+{
+  "skill_name": "ui-styles",
+  "description": "Natural-language cases for native Codex discovery; prompts must not name skills or require reading instructions.",
+  "cases": [
+    {
+      "id": "web_business",
+      "should_trigger": true,
+      "prompt": "给仓库管理员做一个本地库存查询页面，能按品名筛选，库存不足的要看得出来。用当前目录的数据，先做一个能点能筛选的页面。",
+      "stop_after_read": true
+    },
+    {
+      "id": "existing_page",
+      "should_trigger": true,
+      "prompt": "给这个现有项目增加一个设置页，放通知开关和每页显示条数，和现在的页面保持一致。只在当前目录改。",
+      "stop_after_read": true
+    },
+    {
+      "id": "requirements_ready",
+      "should_trigger": true,
+      "prompt": "返修登记的需求就按 README 里的范围确定：登记、查询、处理进度，三种角色也都确认了。还没开始做界面，现在下一步怎么安排？先说建议，不用创建文件。",
+      "stop_after_read": false
+    },
+    {
+      "id": "ppt_ready",
+      "should_trigger": true,
+      "prompt": "这份给经销商看的新品发布 PPT，内容已经确认：产品定位、三个卖点、两组对比数据、合作方式，共八页。品牌要求在 README 里。下一步怎么做？先给建议，不用生成文件。",
+      "stop_after_read": false
+    },
+    {
+      "id": "form_mobile",
+      "should_trigger": true,
+      "prompt": "帮我做一张手机上能填写的设备报修表，姓名、设备编号、故障描述、紧急程度和提交按钮，工人戴手套也要容易点，先在本地用假数据演示。",
+      "stop_after_read": true
+    },
+    {
+      "id": "custom_brand",
+      "should_trigger": true,
+      "prompt": "我们咨询公司的页面方向就定为暖白底、深棕正文、大标题和细线分区，不用卡片。已有项目主要是服务介绍和预约咨询。先用文字整理这套方案如何应用到这些功能，不创建文件。这个方向我已经认可。",
+      "stop_after_read": false
+    },
+    {
+      "id": "early_requirements",
+      "should_trigger": false,
+      "prompt": "我想做一个给小店老板用的产品，可能管库存，也可能管客户回访，还没想清楚。现在只讨论最先解决哪个问题，不讨论界面或制作。",
+      "stop_after_read": false
+    },
+    {
+      "id": "ppt_copy",
+      "should_trigger": false,
+      "prompt": "只把这句 PPT 文案改得简洁一点：“我们的解决方案能够全面赋能企业的全流程数字化转型升级。”不要讨论排版或配色。",
+      "stop_after_read": false
+    },
+    {
+      "id": "backend_fix",
+      "should_trigger": false,
+      "prompt": "api.py 的 stock_delta 算错了，出库数量应该从当前库存中扣除。只修计算，不要改页面。",
+      "stop_after_read": false
+    },
+    {
+      "id": "ui_logic_fix",
+      "should_trigger": false,
+      "prompt": "app.js 的库存筛选有个 bug：关键词前后有空格就搜不到。只在过滤前去掉首尾空格，不改变页面结构和任何样式。",
+      "stop_after_read": false
+    },
+    {
+      "id": "color_data",
+      "should_trigger": false,
+      "prompt": "把 colors.csv 的十六进制颜色转成 R、G、B 三列，保留原来的名称列，输出 converted.csv。只做数据转换。",
+      "stop_after_read": false
+    },
+    {
+      "id": "form_fields",
+      "should_trigger": false,
+      "prompt": "现在先确定设备报修登记需要哪些字段、哪些必填，以及设备编号怎么校验。只给字段清单和规则，不做表单页面或排版。",
+      "stop_after_read": false
+    },
+    {
+      "id": "accepted_preview",
+      "should_trigger": true,
+      "stop_after_read": false,
+      "prompt": "我看过当前这版页面效果了，暖白底、深棕字、大标题和细线分区，很符合我们咨询公司的定位。这个定制方向已经确认，后面其它项目也希望延续这种感觉。先别改文件，你看接下来怎么处理合适？"
+    }
+  ]
+}
