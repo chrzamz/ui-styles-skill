@@ -113,4 +113,4 @@ Contributions should address real usage failures, state coverage, adapters and e
 
 ## License
 
-[MIT](./LICENSE) © 2026 chrzamz. See [ATTRIBUTION.md](./ATTRIBUTION.md) for third-party material provenance and rights notices.
+[MIT](./LICENSE) © 2026 chrzamz.

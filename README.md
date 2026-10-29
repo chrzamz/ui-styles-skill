@@ -113,4 +113,4 @@ python3 -B -m unittest discover -s tests -v
 
 ## 协议
 
-[MIT](./LICENSE) © 2026 chrzamz。第三方资料的来源与权利说明见 [ATTRIBUTION.md](./ATTRIBUTION.md)。
+[MIT](./LICENSE) © 2026 chrzamz。
